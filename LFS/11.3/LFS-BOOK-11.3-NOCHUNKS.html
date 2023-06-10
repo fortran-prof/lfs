@@ -5422,6 +5422,7 @@ bash version-check.sh</kbd></pre>
             </p>
             <pre class="userinput"><kbd class="command">mkfs -v -t ext4 /dev/<em class="replaceable"><code>&lt;xxx&gt;</code></em></kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: выше забыли упомянуть, что в системе должен быть установлен mkfs и что эту команду нужно запускать через sudo]</b>
               Replace <em class="replaceable"><code>&lt;xxx&gt;</code></em>
               with the name of the LFS partition.
             </p>
@@ -5432,6 +5433,7 @@ bash version-check.sh</kbd></pre>
             </p>
             <pre class="userinput"><kbd class="command">mkswap /dev/<em class="replaceable"><code>&lt;yyy&gt;</code></em></kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: выше забыли упомянуть, что в системе должен быть установлен mkswap и что эту команду нужно запускать через sudo]</b>
               Replace <em class="replaceable"><code>&lt;yyy&gt;</code></em>
               with the name of the <code class="systemitem">swap</code>
               partition.
@@ -5550,6 +5552,7 @@ bash version-check.sh</kbd></pre>
             <pre class="userinput"><kbd class="command">mkdir -pv $LFS
 mount -v -t ext4 /dev/<em class="replaceable"><code>&lt;xxx&gt;</code></em> $LFS</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: выше забыли упомянуть, что в системе должен быть установлен util-linux (для mount и swapon) и что обе эти команды нужно запускать через sudo]</b>
               Replace <em class="replaceable"><code>&lt;xxx&gt;</code></em>
               with the name of the LFS partition.
             </p>
@@ -5600,6 +5603,7 @@ mount -v -t ext4 /dev/<em class="replaceable"><code>&lt;yyy&gt;</code></em> $LFS
             </p>
             <pre class="userinput"><kbd class="command">/sbin/swapon -v /dev/<em class="replaceable"><code>&lt;zzz&gt;</code></em></kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: выше забыли упомянуть, что в системе должен быть установлен util-linux и что swapon нужно запускать через sudo. ВАЖНО! Тут требуется такая же ремарка про запись swap-а в /etc/fstab, как это было упомянуто для /mnt/lfs]</b>
               Replace <em class="replaceable"><code>&lt;zzz&gt;</code></em>
               with the name of the <code class="systemitem">swap</code>
               partition.
@@ -5632,6 +5636,7 @@ mount -v -t ext4 /dev/<em class="replaceable"><code>&lt;yyy&gt;</code></em> $LFS
               </div>
             </div>
             <p>
+			  <b>[PROF.FORTRAN: если система будет перезагружена, то надо не забыть повторить установку переменной $LFS, а также монтирование /mnt/lfs и swapon]</b>
               This chapter includes a list of packages that need to be
               downloaded in order to build a basic Linux system. The listed
               version numbers correspond to versions of the software that are
@@ -5680,6 +5685,7 @@ mount -v -t ext4 /dev/<em class="replaceable"><code>&lt;yyy&gt;</code></em> $LFS
             </p>
             <pre class="userinput"><kbd class="command">mkdir -v $LFS/sources</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: mkdir это часть coreutils. Запускаем через sudo]</b>
               Make this directory writable and sticky. <span class="quote">“<span class="quote">Sticky</span>”</span>
               means that even if multiple users have write permission on a
               directory, only the owner of a file can delete the file within
@@ -5688,6 +5694,7 @@ mount -v -t ext4 /dev/<em class="replaceable"><code>&lt;yyy&gt;</code></em> $LFS
             </p>
             <pre class="userinput"><kbd class="command">chmod -v a+wt $LFS/sources</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: chmod это часть coreutils. Запускаем через sudo]</b>
               There are several ways to obtain all the necessary packages and
               patches to build LFS:
             </p>
