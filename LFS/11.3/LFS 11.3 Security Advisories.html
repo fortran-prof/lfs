@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0057)https://www.linuxfromscratch.org/lfs/advisories/11.3.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
+    <title>LFS 11.3 Security Advisories</title>
+    <link rel="stylesheet" type="text/css" href="./LFS 11.3 Security Advisories_files/main.css">
+  <script data-avast-pam="y" type="text/javascript" name="AVAST_PAM_submitInjector">(function _submitInjector() {
+        var f = document.querySelectorAll("form")[0]; // eslint-disable-line no-undef
+        if (!f._avast_submit) {
+          f._avast_submit = f.submit;
+        }
+        try {
+          Object.defineProperty(f, "submit", {
+            get: function get() {
+              return function (prev_submit) {
+                prev_submit.call(this);
+
+                if (this._avast_inside_submit) {
+                  return;
+                }
+                this._avast_inside_submit = true;
+
+                var evt = document.createEvent("CustomEvent");
+                evt.initEvent("scriptsubmit", true, true); // bubbling & cancelable
+                this.dispatchEvent(evt);
+
+                delete this._avast_inside_submit;
+              }.bind(this, this._avast_submit);
+            },
+            set: function set(submitFunc) {
+              this._avast_submit = submitFunc;
+            }
+          });
+        } catch (ex) {
+          // ignored
+        }
+      })();</script><script data-avast-pam="y" type="text/javascript" name="AVAST_PAM_submitInjector">(function _submitInjector() {
+        var f = document.querySelectorAll("form")[0]; // eslint-disable-line no-undef
+        if (!f._avast_submit) {
+          f._avast_submit = f.submit;
+        }
+        try {
+          Object.defineProperty(f, "submit", {
+            get: function get() {
+              return function (prev_submit) {
+                prev_submit.call(this);
+
+                if (this._avast_inside_submit) {
+                  return;
+                }
+                this._avast_inside_submit = true;
+
+                var evt = document.createEvent("CustomEvent");
+                evt.initEvent("scriptsubmit", true, true); // bubbling & cancelable
+                this.dispatchEvent(evt);
+
+                delete this._avast_inside_submit;
+              }.bind(this, this._avast_submit);
+            },
+            set: function set(submitFunc) {
+              this._avast_submit = submitFunc;
+            }
+          });
+        } catch (ex) {
+          // ignored
+        }
+      })();</script></head>
+  <body cz-shortcut-listen="true">
+    <div class="main">
+
+    <h2>LFS Security Advisories for LFS 11.3 and the current development books.</h2>
+
+    <a id="LFS11.3">
+    <p>LFS-11.3 was released on 2022-03-01</p>
+
+    <h3>libcap</h3>
+
+    </a><a id="sa-11.3-032">
+    <h4>11.3 032 libcap (LFS) Date: 2023-06-05  Severity: Medium</h4>
+    </a><p><a id="sa-11.3-032">In libcap-2.69, two security vulnerabilities were fixed that could allow
+    for denial of service. These occur due to an integer overflow and a memory
+    leak, and can be triggered when using the __real_pthread_create() and the
+    _libcap_strdup() functions in libcap. Update to libcap-2.69 to fix them.
+    </a><a href="https://www.linuxfromscratch.org/blfs/advisories/consolidated.html#sa-11.3-032">11.3-032</a></p>
+
+<!-- end of libcap -->
+
+    <h3>Linux Kernel</h3>
+
+    <a id="sa-11.3-011">
+    <h4>11.3 011 Linux Kernel (LFS)     Date: 2023-03-05 Severity: High</h4>
+    </a><p><a id="sa-11.3-011">In Linux-6.2.3 through 6.2.9 (and Linux-6.1.15 through 6.1.22),
+    eleven security vulnerabilities were fixed in various kernel subsystems.
+    These vulnerabilities could allow full system crash or deadlock,
+    network filter bypass, or local priviledge escalation.
+    Update to Linux-6.2.9 or Linux-6.1.22 (LTS) to fix them.
+    </a><a href="https://www.linuxfromscratch.org/blfs/advisories/consolidated.html#sa-11.3-011">11.3-011</a></p>
+
+    <a id="sa-11.3-001">
+    <h4>11.3 001 Linux Kernel (LFS)     Date: 2023-03-05 Severity: High</h4>
+    </a><p><a id="sa-11.3-001">In Linux-6.2.2 (and Linux-6.1.14), five security vulnerabilities were
+    fixed in various kernel subsystems.  These vulnerabilities could allow
+    full system crashes or insufficient protection against hardware
+    vulnerabilities.  Update to Linux-6.2.2 or Linux-6.1.14 (LTS) to fix
+    them.
+    </a><a href="https://www.linuxfromscratch.org/blfs/advisories/consolidated.html#sa-11.3-001">11.3-001</a></p>
+
+<!-- end of Linux Kernel -->
+
+    <h3>OpenSSL</h3>
+
+    <a id="sa-11.3-033">
+    <h4>11.3 033 OpenSSL (LFS) Date: 2023-06-05 Severity: Medium</h4>
+    </a><p><a id="sa-11.3-033">In OpenSSL-3.1.1, several security vulnerabilities were fixed that could
+    allow for denial of service, crashes on ARM64 platforms, certificate policy
+    bypass, and severe degredation of performance. Update to OpenSSL-3.1.1.
+    </a><a href="https://www.linuxfromscratch.org/blfs/consolidated.html#sa-11.3-033">11.3-033</a></p>
+
+<!-- end of OpenSSL -->
+
+     <!-- Editors: Do not remove this entry, just comment it out. -->
+
+<!--
+     <ul>
+       <li>There are currently no known security vulnerabilities for LFS-11.3.</li>
+     </ul>
+-->
+    <!-- Editors: do the consolidated file first, to get the next number.
+         Checking what you have prepared is easier if you can create symlinks
+         in the directory where you put the books' html so that you can see
+         the LFS and BLFS advisories in your browser. -->
+
+<!--
+    <p style="font-style: italic;">This page is in alphabetical order of packages,
+    and if a package has multiple advisories the newer come first.</p>
+
+    <p> The links at the end of each item point to fuller details which have
+    links to the
+    development <!\-\- change to 'released' when links in consolidated are changed
+    after a release \-\->
+    books.</p>-->
+
+    <!-- After a release, copy for next book version, leave just template stuff
+     in that, and note
+     that later advisories will be in the [next release] version -->
+
+    <!-- Editors - do the consolidated page first, to get the next advisory number -->
+
+    <!-- previous glibc text retained as comment, because it is special for
+    rebuilding
+    <h3>Glibc</h3>
+
+    <p style="font-style: italic;">In LFS the only safe way to update Glibc is to
+    build a new system.</p>
+
+    <h4>10.1 NNN Glibc (LFS)  Date: 2021-02-07  Severity: High</h4>
+
+    <p>In Glibc before 2.33 there are four vulnerabilities in iconv which can lead
+    to a crash when processing less-common character encodings.</p>
+
+    <p>Please read the link to assess the severity of this for your use
+    case, and what action to take.
+    <a href="../../blfs/advisories/consolidated.html#10.1-NNN">sa-10.1-NNN</a></p>
+
+    <!\-\- End of Glibc -->
+
+   <!-- start of template
+
+    <h3>PackageName</h3>
+
+    <h4>11.2 NNN PackageName (LFS)  Date: 2022-09-01  Severity: Low</h4>
+    <p>Breif details here. See
+    <a href=i"../../blfs/advisories/consolidated.html#sa-11.2-NNN">11.2-NNN</a></p>
+
+    <!\-\- End of PackageName -->
+    <!-- End of template -->
+
+       <br>
+      <div id="footer">
+       <p>© 1998-2023 Gerard Beekmans. Website design by Jeremy Huntwork &amp; 
+                 Matthew Burgess.</p>
+      </div>
+     </div>
+  
+
+
+</body></html>
