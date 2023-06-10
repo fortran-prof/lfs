@@ -1,6 +1,6 @@
 
 <!-- saved from url=(0081)https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
     <title>
       Linux From Scratch
@@ -583,28 +583,28 @@
           </div>
           <div>
             <p class="copyright">
-              Copyright © 1999-2023 Gerard Beekmans
+              Copyright Â© 1999-2023 Gerard Beekmans
             </p>
           </div>
           <div>
             <div class="legalnotice">
               <a id="idm140426865506224"></a>
               <p>
-                Copyright © 1999-2023, Gerard Beekmans
+                Copyright Â© 1999-2023, Gerard Beekmans
               </p>
               <p>
                 All rights reserved.
               </p>
               <p>
-                This book is licensed under a <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#CC" title="F.1. Creative Commons License">Creative Commons
+                This book is licensed under a <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#CC" title="F.1.Â Creative Commons License">Creative Commons
                 License</a>.
               </p>
               <p>
                 Computer instructions may be extracted from the book under
-                the <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#MIT" title="F.2. The MIT License">MIT License</a>.
+                the <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#MIT" title="F.2.Â The MIT License">MIT License</a>.
               </p>
               <p>
-                <span class="trademark">Linux</span>® is a registered
+                <span class="trademark">Linux</span>Â® is a registered
                 trademark of Linus Torvalds.
               </p>
             </div>
@@ -1448,7 +1448,7 @@
           <p>
             To truly make it my own system, I resolved to compile everything
             from source code instead of using pre-compiled binary packages.
-            This <span class="quote">“<span class="quote">perfect</span>”</span> Linux system would have the
+            This <span class="quote">â€œ<span class="quote">perfect</span>â€</span> Linux system would have the
             strengths of various systems without their perceived weaknesses.
             At first, the idea was rather daunting. I remained committed to
             the idea that such a system could be built.
@@ -1506,9 +1506,9 @@
           </div>
           <p>
             There are many reasons why you would want to read this book. One
-            of the questions many people raise is, <span class="quote">“<span class="quote">why go through all the hassle
+            of the questions many people raise is, <span class="quote">â€œ<span class="quote">why go through all the hassle
             of manually building a Linux system from scratch when you can
-            just download and install an existing one?</span>”</span>
+            just download and install an existing one?</span>â€</span>
           </p>
           <p>
             One important reason for this project's existence is to help you
@@ -1599,9 +1599,9 @@
             system.
           </p>
           <p>
-            The default 64-bit build that results from LFS is a <span class="quote">“<span class="quote">pure</span>”</span>
+            The default 64-bit build that results from LFS is a <span class="quote">â€œ<span class="quote">pure</span>â€</span>
             64-bit system. That is, it supports 64-bit executables only.
-            Building a <span class="quote">“<span class="quote">multi-lib</span>”</span> system requires compiling
+            Building a <span class="quote">â€œ<span class="quote">multi-lib</span>â€</span> system requires compiling
             many applications twice, once for a 32-bit system and once for a
             64-bit system. This is not directly supported in LFS because it
             would interfere with the educational objective of providing the
@@ -1651,7 +1651,7 @@
                 </p>
                 <p>
                   This is a comprehensive guide to building and installing
-                  <span class="quote">“<span class="quote">generic</span>”</span> Unix software packages
+                  <span class="quote">â€œ<span class="quote">generic</span>â€</span> Unix software packages
                   under Linux. Although it was written some time ago, it
                   still provides a good summary of the basic techniques used
                   to build and install software.
@@ -1991,8 +1991,8 @@
           </div>
           <p>
             The goal of LFS is to build a complete and usable
-            foundation-level system—including all the packages needed
-            to replicate itself—and providing a relatively minimal base
+            foundation-level systemâ€”including all the packages needed
+            to replicate itselfâ€”and providing a relatively minimal base
             from which to customize a more complete system based on the
             user's choices. This does not mean that LFS is the smallest
             system possible. Several important packages are included that are
@@ -2848,7 +2848,7 @@ EOF</kbd></pre>
             located at <code class="filename">/usr/share/man/man1/passwd.1</code> and <code class="filename">/usr/share/man/man5/passwd.5</code>. When the book
             uses <code class="filename">passwd(5)</code> it is specifically
             referring to <code class="filename">/usr/share/man/man5/passwd.5</code>. <span class="command"><strong>man passwd</strong></span> will print the first
-            man page it finds that matches <span class="quote">“<span class="quote">passwd</span>”</span>,
+            man page it finds that matches <span class="quote">â€œ<span class="quote">passwd</span>â€</span>,
             which will be <code class="filename">/usr/share/man/man1/passwd.1</code>. For this example,
             you will need to run <span class="command"><strong>man 5
             passwd</strong></span> in order to read the page being specified.
@@ -2887,7 +2887,7 @@ EOF</kbd></pre>
             </h3>
             <p>
               Part II describes how to prepare for the building
-              process—making a partition, downloading the packages, and
+              processâ€”making a partition, downloading the packages, and
               compiling temporary tools.
             </p>
           </div>
@@ -2906,7 +2906,7 @@ EOF</kbd></pre>
             </h3>
             <p>
               Part IV guides the reader through the building of the LFS
-              system—compiling and installing all the packages one by
+              systemâ€”compiling and installing all the packages one by
               one, setting up the boot scripts, and installing the kernel.
               The resulting Linux system is the foundation on which other
               software can be built to expand the system as desired. At the
@@ -2943,8 +2943,8 @@ EOF</kbd></pre>
             updated and enhanced. Security warnings and bug fixes may become
             available after the LFS book has been released. To check whether
             the package versions or instructions in this release of LFS need
-            any modifications—to repair security vulnerabilities or to
-            fix other bugs—please visit <a class="ulink" href="https://www.linuxfromscratch.org/lfs/errata/11.3/">https://www.linuxfromscratch.org/lfs/errata/11.3/</a>
+            any modificationsâ€”to repair security vulnerabilities or to
+            fix other bugsâ€”please visit <a class="ulink" href="https://www.linuxfromscratch.org/lfs/errata/11.3/">https://www.linuxfromscratch.org/lfs/errata/11.3/</a>
             before proceeding with your build. You should note any changes
             shown and apply them to the relevant sections of the book as you
             build the LFS system.
@@ -2999,7 +2999,7 @@ EOF</kbd></pre>
               openSUSE). This existing Linux system (the host) will be used
               as a starting point to provide necessary programs, including a
               compiler, linker, and shell, to build the new system. Select
-              the <span class="quote">“<span class="quote">development</span>”</span> option during the
+              the <span class="quote">â€œ<span class="quote">development</span>â€</span> option during the
               distribution installation to include these tools.
             </p>
             <p>
@@ -3008,32 +3008,32 @@ EOF</kbd></pre>
               distribution.
             </p>
             <p>
-              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-partitioning" title="Chapter 2. Preparing the Host System">Chapter&nbsp;2</a>
+              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-partitioning" title="ChapterÂ 2.Â Preparing the Host System">Chapter&nbsp;2</a>
               of this book describes how to create a new Linux native
               partition and file system, where the new LFS system will be
-              compiled and installed. <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-getting-materials" title="Chapter 3. Packages and Patches">Chapter&nbsp;3</a>
+              compiled and installed. <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-getting-materials" title="ChapterÂ 3.Â Packages and Patches">Chapter&nbsp;3</a>
               explains which packages and patches must be downloaded to build
               an LFS system, and how to store them on the new file system.
-              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-final-preps" title="Chapter 4. Final Preparations">Chapter&nbsp;4</a>
+              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-final-preps" title="ChapterÂ 4.Â Final Preparations">Chapter&nbsp;4</a>
               discusses the setup of an appropriate working environment.
-              Please read <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-final-preps" title="Chapter 4. Final Preparations">Chapter&nbsp;4</a>
+              Please read <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-final-preps" title="ChapterÂ 4.Â Final Preparations">Chapter&nbsp;4</a>
               carefully as it explains several important issues you should be
-              aware of before you begin to work your way through <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
+              aware of before you begin to work your way through <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
               and beyond.
             </p>
             <p>
-              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
+              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
               explains the installation of the initial tool chain, (binutils,
               gcc, and glibc) using cross-compilation techniques to isolate
               the new tools from the host system.
             </p>
             <p>
-              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
               shows you how to cross-compile basic utilities using the just
               built cross-toolchain.
             </p>
             <p>
-              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="Chapter 7. Entering Chroot and Building Additional Temporary Tools">
+              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="ChapterÂ 7.Â Entering Chroot and Building Additional Temporary Tools">
               Chapter&nbsp;7</a> then enters a "chroot" environment, where we
               use the new tools to build all the rest of the tools needed to
               create the LFS system.
@@ -3044,7 +3044,7 @@ EOF</kbd></pre>
               as to why this is done is provided in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-toolchaintechnotes" title="Toolchain Technical Notes">Toolchain Technical Notes</a>.
             </p>
             <p>
-              In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>
+              In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>
               the full-blown LFS system is built. Another advantage provided
               by the chroot environment is that it allows you to continue
               using the host system while LFS is being built. While waiting
@@ -3053,9 +3053,9 @@ EOF</kbd></pre>
             </p>
             <p>
               To finish the installation, the basic system configuration is
-              set up in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-config" title="Chapter 9. System Configuration">Chapter&nbsp;9</a>,
-              and the kernel and boot loader are created in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-bootable" title="Chapter 10. Making the LFS System Bootable">Chapter&nbsp;10</a>.
-              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-finalizing" title="Chapter 11. The End">Chapter&nbsp;11</a> contains
+              set up in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-config" title="ChapterÂ 9.Â System Configuration">Chapter&nbsp;9</a>,
+              and the kernel and boot loader are created in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-bootable" title="ChapterÂ 10.Â Making the LFS System Bootable">Chapter&nbsp;10</a>.
+              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-finalizing" title="ChapterÂ 11.Â The End">Chapter&nbsp;11</a> contains
               information on continuing the LFS experience beyond this book.
               After the steps in this chapter have been implemented, the
               computer is ready to boot into the new LFS system.
@@ -4511,8 +4511,8 @@ EOF</kbd></pre>
             </p>
             <p>
               We also have a wonderful LFS community that is willing to offer
-              assistance through the mailing lists and IRC (see the <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-intro-resources" title="1.4. Resources">Section&nbsp;1.4,
-              “Resources”</a> section of this book). However, we
+              assistance through the mailing lists and IRC (see the <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-intro-resources" title="1.4.Â Resources">Section&nbsp;1.4,
+              â€œResourcesâ€</a> section of this book). However, we
               get several support questions every day, and many of them could
               have been easily answered by going to the FAQ or by searching
               the mailing lists first. So, for us to offer the best
@@ -4718,8 +4718,8 @@ make: *** [all-recursive-am] Error 2</code></pre>
                 minimum versions indicated. This should not be an issue for
                 most modern Linux distributions. Also note that many
                 distributions will place software headers into separate
-                packages, often in the form of <span class="quote">“<span class="quote">&lt;package-name&gt;-devel</span>”</span> or
-                <span class="quote">“<span class="quote">&lt;package-name&gt;-dev</span>”</span>. Be
+                packages, often in the form of <span class="quote">â€œ<span class="quote">&lt;package-name&gt;-devel</span>â€</span> or
+                <span class="quote">â€œ<span class="quote">&lt;package-name&gt;-dev</span>â€</span>. Be
                 sure to install those if your distribution provides them.
               </p>
               <p>
@@ -4796,8 +4796,8 @@ make: *** [all-recursive-am] Error 2</code></pre>
                     </p>
                     <p>
                       The reason for the kernel version requirement is that
-                      we specify that version when building <span class="application">glibc</span> in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
-                      and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">
+                      we specify that version when building <span class="application">glibc</span> in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
+                      and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">
                       Chapter&nbsp;8</a>, at the recommendation of the
                       developers.
                     </p>
@@ -4811,7 +4811,7 @@ make: *** [all-recursive-am] Error 2</code></pre>
                       you would prefer not to install it, you can compile a
                       kernel yourself. Instructions for compiling the kernel
                       and configuring the boot loader (assuming the host uses
-                      GRUB) are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-bootable" title="Chapter 10. Making the LFS System Bootable">Chapter&nbsp;10</a>.
+                      GRUB) are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-bootable" title="ChapterÂ 10.Â Making the LFS System Bootable">Chapter&nbsp;10</a>.
                     </p>
                   </li>
                   <li class="listitem">
@@ -4963,7 +4963,7 @@ bash version-check.sh</kbd></pre>
             </p>
             <div class="sect2" lang="en">
               <h3 class="sect2">
-                2.3.1. Chapters&nbsp;1–4
+                2.3.1. Chapters&nbsp;1â€“4
               </h3>
               <p>
                 These chapters run commands on the host system. When
@@ -4982,7 +4982,7 @@ bash version-check.sh</kbd></pre>
             </div>
             <div class="sect2" lang="en">
               <h3 class="sect2">
-                2.3.2. Chapters&nbsp;5–6
+                2.3.2. Chapters&nbsp;5â€“6
               </h3>
               <div class="itemizedlist">
                 <ul>
@@ -5016,7 +5016,7 @@ bash version-check.sh</kbd></pre>
             </div>
             <div class="sect2" lang="en">
               <h3 class="sect2">
-                2.3.3. Chapters&nbsp;7–10
+                2.3.3. Chapters&nbsp;7â€“10
               </h3>
               <div class="itemizedlist">
                 <ul>
@@ -5027,9 +5027,9 @@ bash version-check.sh</kbd></pre>
                   </li>
                   <li class="listitem">
                     <p>
-                      A few operations, from <span class="quote">“<span class="quote">Changing
-                      Ownership</span>”</span> to <span class="quote">“<span class="quote">Entering the Chroot
-                      Environment</span>”</span>, must be done as the
+                      A few operations, from <span class="quote">â€œ<span class="quote">Changing
+                      Ownership</span>â€</span> to <span class="quote">â€œ<span class="quote">Entering the Chroot
+                      Environment</span>â€</span>, must be done as the
                       <code class="systemitem">root</code> user, with the LFS
                       environment variable set for the <code class="systemitem">root</code> user.
                     </p>
@@ -5047,10 +5047,10 @@ bash version-check.sh</kbd></pre>
                       The virtual file systems must be mounted. This can be
                       done before or after entering chroot by changing to a
                       host virtual terminal and, as <code class="systemitem">root</code>, running the commands in
-                      <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-bindmount" title="7.3.1. Mounting and Populating /dev">Section&nbsp;7.3.1,
-                      “Mounting and Populating /dev”</a> and
-                      <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-kernfsmount" title="7.3.2. Mounting Virtual Kernel File Systems">Section&nbsp;7.3.2,
-                      “Mounting Virtual Kernel File Systems”</a>.
+                      <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-bindmount" title="7.3.1.Â Mounting and Populating /dev">Section&nbsp;7.3.1,
+                      â€œMounting and Populating /devâ€</a> and
+                      <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-kernfsmount" title="7.3.2.Â Mounting Virtual Kernel File Systems">Section&nbsp;7.3.2,
+                      â€œMounting Virtual Kernel File Systemsâ€</a>.
                     </p>
                   </li>
                 </ul>
@@ -5101,7 +5101,7 @@ bash version-check.sh</kbd></pre>
             <p>
               Start a disk partitioning program such as <span class="command"><strong>cfdisk</strong></span> or <span class="command"><strong>fdisk</strong></span> with a command line
               option naming the hard disk on which the new partition will be
-              created—for example <code class="filename">/dev/sda</code> for the primary disk drive. Create a
+              createdâ€”for example <code class="filename">/dev/sda</code> for the primary disk drive. Create a
               Linux native partition and a <code class="systemitem">swap</code> partition, if needed. Please refer to
               <code class="filename">cfdisk(8)</code> or <code class="filename">fdisk(8)</code> if you do not yet know how to use
               the programs.
@@ -5260,7 +5260,7 @@ bash version-check.sh</kbd></pre>
                   <ul>
                     <li class="listitem">
                       <p>
-                        /boot – Highly recommended. Use this partition
+                        /boot â€“ Highly recommended. Use this partition
                         to store kernels and other booting information. To
                         minimize potential boot problems with larger disks,
                         make this the first physical partition on your first
@@ -5270,7 +5270,7 @@ bash version-check.sh</kbd></pre>
                     </li>
                     <li class="listitem">
                       <p>
-                        /boot/efi – The EFI System Partition, which is
+                        /boot/efi â€“ The EFI System Partition, which is
                         needed for booting the system with UEFI. Read
                         <a class="ulink" href="https://www.linuxfromscratch.org/blfs/view/11.3/postlfs/grub-setup.html">
                         the BLFS page</a> for details.
@@ -5278,7 +5278,7 @@ bash version-check.sh</kbd></pre>
                     </li>
                     <li class="listitem">
                       <p>
-                        /home – Highly recommended. Share your home
+                        /home â€“ Highly recommended. Share your home
                         directory and user customization across multiple
                         distributions or LFS builds. The size is generally
                         fairly large and depends on available disk space.
@@ -5286,7 +5286,7 @@ bash version-check.sh</kbd></pre>
                     </li>
                     <li class="listitem">
                       <p>
-                        /usr – In LFS, <code class="filename">/bin</code>, <code class="filename">/lib</code>, and <code class="filename">/sbin</code> are symlinks to their
+                        /usr â€“ In LFS, <code class="filename">/bin</code>, <code class="filename">/lib</code>, and <code class="filename">/sbin</code> are symlinks to their
                         counterparts in <code class="filename">/usr</code>.
                         So <code class="filename">/usr</code> contains all
                         the binaries needed for the system to run. For LFS a
@@ -5304,7 +5304,7 @@ bash version-check.sh</kbd></pre>
                     </li>
                     <li class="listitem">
                       <p>
-                        /opt – This directory is most useful for BLFS,
+                        /opt â€“ This directory is most useful for BLFS,
                         where multiple large packages like KDE or Texlive can
                         be installed without embedding the files in the /usr
                         hierarchy. If used, 5 to 10 gigabytes is generally
@@ -5313,7 +5313,7 @@ bash version-check.sh</kbd></pre>
                     </li>
                     <li class="listitem">
                       <p>
-                        /tmp – A separate /tmp directory is rare, but
+                        /tmp â€“ A separate /tmp directory is rare, but
                         useful if configuring a thin client. This partition,
                         if used, will usually not need to exceed a couple of
                         gigabytes. If you have enough RAM, you can mount a
@@ -5323,7 +5323,7 @@ bash version-check.sh</kbd></pre>
                     </li>
                     <li class="listitem">
                       <p>
-                        /usr/src – This partition is very useful for
+                        /usr/src â€“ This partition is very useful for
                         providing a location to store BLFS source files and
                         share them across LFS builds. It can also be used as
                         a location for building BLFS packages. A reasonably
@@ -5338,8 +5338,8 @@ bash version-check.sh</kbd></pre>
                   when the system starts must be specified in the
                   <code class="filename">/etc/fstab</code> file. Details
                   about how to specify partitions will be discussed in
-                  <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-bootable-fstab" title="10.2. Creating the /etc/fstab File">Section&nbsp;10.2,
-                  “Creating the /etc/fstab File”</a>.
+                  <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-bootable-fstab" title="10.2.Â Creating the /etc/fstab File">Section&nbsp;10.2,
+                  â€œCreating the /etc/fstab Fileâ€</a>.
                 </p>
               </div>
             </div>
@@ -5464,8 +5464,8 @@ bash version-check.sh</kbd></pre>
               Having this variable set is beneficial in that commands such as
               <span class="command"><strong>mkdir -v
               $LFS/tools</strong></span> can be typed literally. The shell
-              will automatically replace <span class="quote">“<span class="quote">$LFS</span>”</span>
-              with <span class="quote">“<span class="quote">/mnt/lfs</span>”</span> (or whatever value the
+              will automatically replace <span class="quote">â€œ<span class="quote">$LFS</span>â€</span>
+              with <span class="quote">â€œ<span class="quote">/mnt/lfs</span>â€</span> (or whatever value the
               variable was set to) when it processes the command line.
             </p>
             <div class="admon caution">
@@ -5680,7 +5680,7 @@ mount -v -t ext4 /dev/<em class="replaceable"><code>&lt;yyy&gt;</code></em> $LFS
             </p>
             <pre class="userinput"><kbd class="command">mkdir -v $LFS/sources</kbd></pre>
             <p>
-              Make this directory writable and sticky. <span class="quote">“<span class="quote">Sticky</span>”</span>
+              Make this directory writable and sticky. <span class="quote">â€œ<span class="quote">Sticky</span>â€</span>
               means that even if multiple users have write permission on a
               directory, only the owner of a file can delete the file within
               a sticky directory. The following command will enable the write
@@ -7166,7 +7166,7 @@ popd</kbd></pre>
               of directories in <code class="filename">$LFS</code> (in which
               we will install the temporary tools), add an unprivileged user,
               and create an appropriate build environment for that user. We
-              will also explain the units of time (<span class="quote">“<span class="quote">SBUs</span>”</span>)
+              will also explain the units of time (<span class="quote">â€œ<span class="quote">SBUs</span>â€</span>)
               we use to measure how long it takes to build LFS packages, and
               provide some information about package test suites.
             </p>
@@ -7186,11 +7186,11 @@ popd</kbd></pre>
               In this section, we begin populating the LFS filesystem with
               the pieces that will constitute the final Linux system. The
               first step is to create a limited directory hierarchy, so that
-              the programs compiled in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
-              (as well as glibc and libstdc++ in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>)
+              the programs compiled in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+              (as well as glibc and libstdc++ in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>)
               can be installed in their final location. We do this so those
               temporary programs will be overwritten when the final versions
-              are built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>.
+              are built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>.
             </p>
             <p>
               Create the required directory layout by issuing the following
@@ -7206,7 +7206,7 @@ case $(uname -m) in
   x86_64) mkdir -pv $LFS/lib64 ;;
 esac</kbd></pre>
             <p>
-              Programs in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+              Programs in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
               will be compiled with a cross-compiler (more details can be
               found in section <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-toolchaintechnotes" title="Toolchain Technical Notes">Toolchain Technical Notes</a>).
               This cross-compiler will be installed in a special directory,
@@ -7348,7 +7348,7 @@ esac</kbd></pre>
             </p>
             <pre class="userinput"><kbd class="command">su - lfs</kbd></pre>
             <p>
-              The <span class="quote">“<span class="quote"><em class="parameter"><code>-</code></em></span>”</span> instructs
+              The <span class="quote">â€œ<span class="quote"><em class="parameter"><code>-</code></em></span>â€</span> instructs
               <span class="command"><strong>su</strong></span> to start a
               login shell as opposed to a non-login shell. The difference
               between these two types of shells is described in detail in
@@ -7379,7 +7379,7 @@ EOF</kbd></pre>
               When logged on as user <code class="systemitem">lfs</code>, or
               when switched to the <code class="systemitem">lfs</code> user
               using an <span class="command"><strong>su</strong></span>
-              command with the <span class="quote">“<span class="quote"><em class="parameter"><code>-</code></em></span>”</span> option,
+              command with the <span class="quote">â€œ<span class="quote"><em class="parameter"><code>-</code></em></span>â€</span> option,
               the initial shell is a <span class="emphasis"><em>login</em></span> shell which reads the
               <code class="filename">/etc/profile</code> of the host
               (probably containing some settings and environment variables)
@@ -7424,7 +7424,7 @@ EOF</kbd></pre>
                   <p>
                     The <span class="command"><strong>set +h</strong></span>
                     command turns off <span class="command"><strong>bash</strong></span>'s hash function.
-                    Hashing is ordinarily a useful feature—<span class="command"><strong>bash</strong></span> uses a hash table
+                    Hashing is ordinarily a useful featureâ€”<span class="command"><strong>bash</strong></span> uses a hash table
                     to remember the full path to executable files to avoid
                     searching the <code class="envar">PATH</code> time and
                     again to find the same executable. However, the new tools
@@ -7470,7 +7470,7 @@ EOF</kbd></pre>
                     The <code class="envar">LC_ALL</code> variable controls
                     the localization of certain programs, making their
                     messages follow the conventions of a specified country.
-                    Setting <code class="envar">LC_ALL</code> to <span class="quote">“<span class="quote">POSIX</span>”</span> or <span class="quote">“<span class="quote">C</span>”</span>
+                    Setting <code class="envar">LC_ALL</code> to <span class="quote">â€œ<span class="quote">POSIX</span>â€</span> or <span class="quote">â€œ<span class="quote">C</span>â€</span>
                     (the two are equivalent) ensures that everything will
                     work as expected in the cross-compilation environment.
                   </p>
@@ -7497,7 +7497,7 @@ EOF</kbd></pre>
                     Many modern Linux distributions have merged <code class="filename">/bin</code> and <code class="filename">/usr/bin</code>. When this is the case, the
                     standard <code class="envar">PATH</code> variable should
                     be set to <code class="filename">/usr/bin/</code> for the
-                    <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+                    <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
                     environment. When this is not the case, the following
                     line adds <code class="filename">/bin</code> to the path.
                   </p>
@@ -7520,7 +7520,7 @@ EOF</kbd></pre>
                     By putting <code class="filename">$LFS/tools/bin</code>
                     ahead of the standard <code class="envar">PATH</code>,
                     the cross-compiler installed at the beginning of
-                    <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
+                    <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
                     is picked up by the shell immediately after its
                     installation. This, combined with turning off hashing,
                     limits the risk that the compiler from the host is used
@@ -7532,8 +7532,8 @@ EOF</kbd></pre>
                 </dt>
                 <dd>
                   <p>
-                    In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
-                    and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">
+                    In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
+                    and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">
                     Chapter&nbsp;6</a>, if this variable is not set,
                     <span class="command"><strong>configure</strong></span>
                     scripts may attempt to load configuration items specific
@@ -7573,12 +7573,12 @@ EOF</kbd></pre>
               <pre class="userinput"><kbd class="command">[ ! -e /etc/bash.bashrc ] || mv -v /etc/bash.bashrc /etc/bash.bashrc.NOUSE</kbd></pre>
               <p>
                 When the <code class="systemitem">lfs</code> user is no
-                longer needed (at the beginning of <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="Chapter 7. Entering Chroot and Building Additional Temporary Tools">
+                longer needed (at the beginning of <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="ChapterÂ 7.Â Entering Chroot and Building Additional Temporary Tools">
                 Chapter&nbsp;7</a>), you may safely restore <code class="filename">/etc/bash.bashrc</code> (if desired).
               </p>
               <p>
-                Note that the LFS Bash package we will build in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-bash" title="8.34. Bash-5.2.15">Section&nbsp;8.34,
-                “Bash-5.2.15”</a> is not configured to load or
+                Note that the LFS Bash package we will build in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-bash" title="8.34.Â Bash-5.2.15">Section&nbsp;8.34,
+                â€œBash-5.2.15â€</a> is not configured to load or
                 execute <code class="filename">/etc/bash.bashrc</code>, so
                 this file is useless on a completed LFS system.
               </p>
@@ -7612,7 +7612,7 @@ EOF</kbd></pre>
             </p>
             <p>
               The SBU measure works as follows. The first package to be
-              compiled is binutils in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>.
+              compiled is binutils in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>.
               The time it takes to compile using one core is what we will
               refer to as the Standard Build Unit or SBU. All other compile
               times will be expressed in terms of this unit of time.
@@ -7681,8 +7681,8 @@ EOF</kbd></pre>
             <p>
               Most packages provide a test suite. Running the test suite for
               a newly built package is a good idea because it can provide a
-              <span class="quote">“<span class="quote">sanity
-              check</span>”</span> indicating that everything compiled
+              <span class="quote">â€œ<span class="quote">sanity
+              check</span>â€</span> indicating that everything compiled
               correctly. A test suite that passes its set of checks usually
               proves that the package is functioning as the developer
               intended. It does not, however, guarantee that the package is
@@ -7690,8 +7690,8 @@ EOF</kbd></pre>
             </p>
             <p>
               Some test suites are more important than others. For example,
-              the test suites for the core toolchain packages—GCC,
-              binutils, and glibc—are of the utmost importance due to
+              the test suites for the core toolchain packagesâ€”GCC,
+              binutils, and glibcâ€”are of the utmost importance due to
               their central role in a properly functioning system. The test
               suites for GCC and glibc can take a very long time to complete,
               especially on slower hardware, but are strongly recommended.
@@ -7701,8 +7701,8 @@ EOF</kbd></pre>
                 Note
               </h3>
               <p>
-                Running the test suites in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
-                and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+                Running the test suites in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
+                and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
                 is pointless; since the test programs are compiled with a
                 cross-compiler, they probably can't run on the build host.
               </p>
@@ -7810,8 +7810,8 @@ EOF</kbd></pre>
               process.
             </p>
             <p>
-              The overall goal of <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
-              and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+              The overall goal of <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">Chapter&nbsp;5</a>
+              and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
               is to produce a temporary area containing a set of tools that
               are known to be good, and that are isolated from the host
               system. By using the <span class="command"><strong>chroot</strong></span> command, the
@@ -7865,7 +7865,7 @@ EOF</kbd></pre>
                   <dd>
                     <p>
                       is the machine where we build programs. Note that this
-                      machine is also referred to as the <span class="quote">“<span class="quote">host</span>”</span>.
+                      machine is also referred to as the <span class="quote">â€œ<span class="quote">host</span>â€</span>.
                     </p>
                   </dd>
                   <dt>
@@ -7874,7 +7874,7 @@ EOF</kbd></pre>
                   <dd>
                     <p>
                       is the machine/system where the built programs will
-                      run. Note that this use of <span class="quote">“<span class="quote">host</span>”</span> is not the same as in
+                      run. Note that this use of <span class="quote">â€œ<span class="quote">host</span>â€</span> is not the same as in
                       other sections.
                     </p>
                   </dd>
@@ -7892,8 +7892,8 @@ EOF</kbd></pre>
               </div>
               <p>
                 As an example, let us imagine the following scenario
-                (sometimes referred to as <span class="quote">“<span class="quote">Canadian
-                Cross</span>”</span>). We have a compiler on a slow
+                (sometimes referred to as <span class="quote">â€œ<span class="quote">Canadian
+                Cross</span>â€</span>). We have a compiler on a slow
                 machine only, let's call it machine A, and the compiler ccA.
                 We also have a fast machine (B), but no compiler for (B), and
                 we want to produce code for a third, slow machine (C). We
@@ -8066,9 +8066,9 @@ EOF</kbd></pre>
                   you omit it.
                 </p>
                 <p>
-                  An astute reader may wonder why a <span class="quote">“<span class="quote">triplet</span>”</span> refers to a four
+                  An astute reader may wonder why a <span class="quote">â€œ<span class="quote">triplet</span>â€</span> refers to a four
                   component name. The kernel field and the os field began as
-                  a single <span class="quote">“<span class="quote">system</span>”</span> field. Such a
+                  a single <span class="quote">â€œ<span class="quote">system</span>â€</span> field. Such a
                   three-field form is still valid today for some systems, for
                   example, <code class="literal">x86_64-unknown-freebsd</code>. But two systems
                   can share the same kernel and still be too different to use
@@ -8081,14 +8081,14 @@ EOF</kbd></pre>
                 <p>
                   Without an emulation layer, you cannot run an executable
                   for a server on a mobile phone or vice versa. So the
-                  <span class="quote">“<span class="quote">system</span>”</span> field has been divided
+                  <span class="quote">â€œ<span class="quote">system</span>â€</span> field has been divided
                   into kernel and os fields, to designate these systems
                   unambiguously. In our example, the Android system is
                   designated <code class="literal">aarch64-unknown-linux-android</code>, and the
                   Ubuntu system is designated <code class="literal">aarch64-unknown-linux-gnu</code>.
                 </p>
                 <p>
-                  The word <span class="quote">“<span class="quote">triplet</span>”</span> remains embedded in
+                  The word <span class="quote">â€œ<span class="quote">triplet</span>â€</span> remains embedded in
                   the lexicon. A simple way to determine your system triplet
                   is to run the <span class="command"><strong>config.guess</strong></span> script that
                   comes with the source for many packages. Unpack the
@@ -8125,7 +8125,7 @@ EOF</kbd></pre>
                 it says "lfs". We also use the <em class="parameter"><code>--with-sysroot</code></em> option when
                 building the cross-linker and cross-compiler, to tell them
                 where to find the needed host files. This ensures that none
-                of the other programs built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+                of the other programs built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
                 can link to libraries on the build machine. Only two stages
                 are mandatory, plus one more for tests.
               </p>
@@ -8213,10 +8213,10 @@ EOF</kbd></pre>
                 </table>
               </div>
               <p>
-                In the preceding table, <span class="quote">“<span class="quote">on pc</span>”</span>
+                In the preceding table, <span class="quote">â€œ<span class="quote">on pc</span>â€</span>
                 means the commands are run on a machine using the already
-                installed distribution. <span class="quote">“<span class="quote">On
-                lfs</span>”</span> means the commands are run in a
+                installed distribution. <span class="quote">â€œ<span class="quote">On
+                lfs</span>â€</span> means the commands are run in a
                 chrooted environment.
               </p>
               <p>
@@ -8276,21 +8276,21 @@ EOF</kbd></pre>
                 functional.
               </p>
               <p>
-                In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>
-                (or <span class="quote">“<span class="quote">stage
-                3</span>”</span>), all the packages needed for the LFS
+                In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>
+                (or <span class="quote">â€œ<span class="quote">stage
+                3</span>â€</span>), all the packages needed for the LFS
                 system are built. Even if a package has already been
                 installed into the LFS system in a previous chapter, we still
                 rebuild the package. The main reason for rebuilding these
                 packages is to make them stable: if we reinstall an LFS
                 package on a completed LFS system, the reinstalled content of
                 the package should be the same as the content of the same
-                package when first installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>.
-                The temporary packages installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
-                or <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="Chapter 7. Entering Chroot and Building Additional Temporary Tools">
+                package when first installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>.
+                The temporary packages installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+                or <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="ChapterÂ 7.Â Entering Chroot and Building Additional Temporary Tools">
                 Chapter&nbsp;7</a> cannot satisfy this requirement, because
                 some of them are built without optional dependencies, and
-                autoconf cannot perform some feature checks in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+                autoconf cannot perform some feature checks in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
                 because of cross-compilation, causing the temporary packages
                 to lack optional features, or use suboptimal code routines.
                 Additionally, a minor reason for rebuilding the packages is
@@ -8382,20 +8382,20 @@ checking what linker to use... /mnt/lfs/tools/i686-lfs-linux-gnu/bin/ld</code></
                 <code class="envar">$LFS_TGT</code> expanded) to control
                 which binary tools are used and the use of the <em class="parameter"><code>-nostdinc</code></em> and <em class="parameter"><code>-isystem</code></em> flags to control the
                 compiler's include search path. These items highlight an
-                important aspect of the glibc package—it is very
+                important aspect of the glibc packageâ€”it is very
                 self-sufficient in terms of its build machinery, and
                 generally does not rely on toolchain defaults.
               </p>
               <p>
                 As mentioned above, the standard C++ library is compiled
-                next, followed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+                next, followed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
                 by other programs that must be cross-compiled to break
                 circular dependencies at build time. The install step of all
                 those packages uses the <code class="envar">DESTDIR</code>
                 variable to force installation in the LFS filesystem.
               </p>
               <p>
-                At the end of <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+                At the end of <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
                 the native LFS compiler is installed. First binutils-pass2 is
                 built, in the same <code class="envar">DESTDIR</code>
                 directory as the other programs, then the second pass of gcc
@@ -8406,11 +8406,11 @@ checking what linker to use... /mnt/lfs/tools/i686-lfs-linux-gnu/bin/ld</code></
                 declared explicitly as one of the configuration options.
               </p>
               <p>
-                Upon entering the chroot environment in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="Chapter 7. Entering Chroot and Building Additional Temporary Tools">
+                Upon entering the chroot environment in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="ChapterÂ 7.Â Entering Chroot and Building Additional Temporary Tools">
                 Chapter&nbsp;7</a>, the temporary installations of programs
                 needed for the proper operation of the toolchain are
                 performed. From this point onwards, the core toolchain is
-                self-contained and self-hosted. In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>,
+                self-contained and self-hosted. In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>,
                 final versions of all the packages needed for a fully
                 functional system are built, tested, and installed.
               </p>
@@ -8479,7 +8479,7 @@ checking what linker to use... /mnt/lfs/tools/i686-lfs-linux-gnu/bin/ld</code></
                       Important
                     </h3>
                     <p>
-                      The build instructions assume that the <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-partitioning-hostreqs" title="2.2. Host System Requirements">Host System
+                      The build instructions assume that the <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-partitioning-hostreqs" title="2.2.Â Host System Requirements">Host System
                       Requirements</a>, including symbolic links, have been
                       set properly:
                     </p>
@@ -8544,8 +8544,8 @@ checking what linker to use... /mnt/lfs/tools/i686-lfs-linux-gnu/bin/ld</code></
                                 <p>
                                   Using the <span class="command"><strong>tar</strong></span>
                                   program, extract the package to be built.
-                                  In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="Chapter 5. Compiling a Cross-Toolchain">
-                                  Chapter&nbsp;5</a> and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">
+                                  In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-cross-tools" title="ChapterÂ 5.Â Compiling a Cross-Toolchain">
+                                  Chapter&nbsp;5</a> and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">
                                   Chapter&nbsp;6</a>, ensure you are the
                                   <span class="emphasis"><em>lfs</em></span>
                                   user when extracting the package.
@@ -8786,8 +8786,8 @@ cd       build</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-binutils" title="8.18.2. Contents of Binutils">Section&nbsp;8.18.2,
-                “Contents of Binutils.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-binutils" title="8.18.2.Â Contents of Binutils">Section&nbsp;8.18.2,
+                â€œContents of Binutils.â€</a>
               </p>
             </div>
           </div>
@@ -8852,7 +8852,7 @@ tar -xf ../mpc-1.3.1.tar.gz
 mv -v mpc-1.3.1 mpc</kbd></pre>
               <p>
                 On x86_64 hosts, set the default directory name for 64-bit
-                libraries to <span class="quote">“<span class="quote">lib</span>”</span>:
+                libraries to <span class="quote">â€œ<span class="quote">lib</span>â€</span>:
               </p>
               <pre class="userinput"><kbd class="command">case $(uname -m) in
   x86_64)
@@ -9033,8 +9033,8 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gcc" title="8.26.2. Contents of GCC">Section&nbsp;8.26.2,
-                “Contents of GCC.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gcc" title="8.26.2.Â Contents of GCC">Section&nbsp;8.26.2,
+                â€œContents of GCC.â€</a>
               </p>
             </div>
           </div>
@@ -9083,7 +9083,7 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
               <pre class="userinput"><kbd class="command">make mrproper</kbd></pre>
               <p>
                 Now extract the user-visible kernel headers from the source.
-                The recommended make target <span class="quote">“<span class="quote">headers_install</span>”</span> cannot be used,
+                The recommended make target <span class="quote">â€œ<span class="quote">headers_install</span>â€</span> cannot be used,
                 because it requires <span class="application">rsync</span>,
                 which may not be available. The headers are first placed in
                 <code class="filename">./usr</code>, then copied to the
@@ -9470,8 +9470,8 @@ cd       build</kbd></pre>
                       where the package should be installed. If it is not
                       set, it defaults to the root (<code class="filename">/</code>) directory. Here we specify that
                       the package is installed in <code class="filename">$LFS</code> , which will become the root
-                      directory in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-chroot" title="7.4. Entering the Chroot Environment">Section&nbsp;7.4,
-                      “Entering the Chroot Environment”</a>.
+                      directory in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-chroot" title="7.4.Â Entering the Chroot Environment">Section&nbsp;7.4,
+                      â€œEntering the Chroot Environmentâ€</a>.
                     </p>
                   </dd>
                 </dl>
@@ -9536,8 +9536,8 @@ readelf -l a.out | grep ld-linux</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-glibc" title="8.5.3. Contents of Glibc">Section&nbsp;8.5.3,
-                “Contents of Glibc.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-glibc" title="8.5.3.Â Contents of Glibc">Section&nbsp;8.5.3,
+                â€œContents of Glibc.â€</a>
               </p>
             </div>
           </div>
@@ -9556,7 +9556,7 @@ readelf -l a.out | grep ld-linux</kbd></pre>
               <p>
                 Libstdc++ is the standard C++ library. It is needed to
                 compile C++ code (part of GCC is written in C++), but we had
-                to defer its installation when we built <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-gcc-pass1" title="5.3. GCC-12.2.0 - Pass 1">gcc-pass1</a> because
+                to defer its installation when we built <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-gcc-pass1" title="5.3.Â GCC-12.2.0 - Pass 1">gcc-pass1</a> because
                 Libstdc++ depends on Glibc, which was not yet available in
                 the target directory.
               </p>
@@ -9668,8 +9668,8 @@ cd       build</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gcc" title="8.26.2. Contents of GCC">Section&nbsp;8.26.2,
-                “Contents of GCC.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gcc" title="8.26.2.Â Contents of GCC">Section&nbsp;8.26.2,
+                â€œContents of GCC.â€</a>
               </p>
             </div>
           </div>
@@ -9704,7 +9704,7 @@ cd       build</kbd></pre>
             </p>
             <p>
               Using the utilities will be possible in the next chapter after
-              entering the <span class="quote">“<span class="quote">chroot</span>”</span> environment. But all the
+              entering the <span class="quote">â€œ<span class="quote">chroot</span>â€</span> environment. But all the
               packages built in the present chapter need to be built before
               we do that. Therefore we cannot be independent of the host
               system yet.
@@ -9712,8 +9712,8 @@ cd       build</kbd></pre>
             <p>
               Once again, let us recall that improper setting of <code class="envar">LFS</code> together with building as <code class="systemitem">root</code>, may render your computer unusable.
               This whole chapter must be done as user <code class="systemitem">lfs</code>, with the environment as described in
-              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-preps-settingenviron" title="4.4. Setting Up the Environment">Section&nbsp;4.4,
-              “Setting Up the Environment”</a>.
+              <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-preps-settingenviron" title="4.4.Â Setting Up the Environment">Section&nbsp;4.4,
+              â€œSetting Up the Environmentâ€</a>.
             </p>
           </div>
           <div class="wrap" lang="en">
@@ -9764,8 +9764,8 @@ cd       build</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-m4" title="8.12.2. Contents of M4">Section&nbsp;8.12.2,
-                “Contents of M4.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-m4" title="8.12.2.Â Contents of M4">Section&nbsp;8.12.2,
+                â€œContents of M4.â€</a>
               </p>
             </div>
           </div>
@@ -9807,7 +9807,7 @@ cd       build</kbd></pre>
               </p>
               <pre class="userinput"><kbd class="command">sed -i s/mawk// configure</kbd></pre>
               <p>
-                Then, run the following commands to build the <span class="quote">“<span class="quote">tic</span>”</span>
+                Then, run the following commands to build the <span class="quote">â€œ<span class="quote">tic</span>â€</span>
                 program on the build host:
               </p>
               <pre class="userinput"><kbd class="command">mkdir build
@@ -9956,7 +9956,7 @@ echo "INPUT(-lncursesw)" &gt; $LFS/usr/lib/libncurses.so</kbd></pre>
                       The <code class="filename">libncurses.so</code> library
                       is needed by a few packages we will build soon. We
                       create this small linker script, as this is what is
-                      done in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">
+                      done in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">
                       Chapter&nbsp;8</a>.
                     </p>
                   </dd>
@@ -9965,8 +9965,8 @@ echo "INPUT(-lncursesw)" &gt; $LFS/usr/lib/libncurses.so</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-ncurses" title="8.28.2. Contents of Ncurses">Section&nbsp;8.28.2,
-                “Contents of Ncurses.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-ncurses" title="8.28.2.Â Contents of Ncurses">Section&nbsp;8.28.2,
+                â€œContents of Ncurses.â€</a>
               </p>
             </div>
           </div>
@@ -10043,8 +10043,8 @@ echo "INPUT(-lncursesw)" &gt; $LFS/usr/lib/libncurses.so</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-bash" title="8.34.2. Contents of Bash">Section&nbsp;8.34.2,
-                “Contents of Bash.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-bash" title="8.34.2.Â Contents of Bash">Section&nbsp;8.34.2,
+                â€œContents of Bash.â€</a>
               </p>
             </div>
           </div>
@@ -10099,7 +10099,7 @@ echo "INPUT(-lncursesw)" &gt; $LFS/usr/lib/libncurses.so</kbd></pre>
                   <dd>
                     <p>
                       This enables the <span class="command"><strong>hostname</strong></span> binary to be
-                      built and installed – it is disabled by default
+                      built and installed â€“ it is disabled by default
                       but is required by the Perl test suite.
                     </p>
                   </dd>
@@ -10125,8 +10125,8 @@ sed -i 's/"1"/"8"/'                    $LFS/usr/share/man/man8/chroot.8</kbd></p
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-coreutils" title="8.54.2. Contents of Coreutils">Section&nbsp;8.54.2,
-                “Contents of Coreutils.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-coreutils" title="8.54.2.Â Contents of Coreutils">Section&nbsp;8.54.2,
+                â€œContents of Coreutils.â€</a>
               </p>
             </div>
           </div>
@@ -10177,8 +10177,8 @@ sed -i 's/"1"/"8"/'                    $LFS/usr/share/man/man8/chroot.8</kbd></p
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-diffutils" title="8.56.2. Contents of Diffutils">Section&nbsp;8.56.2,
-                “Contents of Diffutils.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-diffutils" title="8.56.2.Â Contents of Diffutils">Section&nbsp;8.56.2,
+                â€œContents of Diffutils.â€</a>
               </p>
             </div>
           </div>
@@ -10269,8 +10269,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-file" title="8.10.2. Contents of File">Section&nbsp;8.10.2,
-                “Contents of File.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-file" title="8.10.2.Â Contents of File">Section&nbsp;8.10.2,
+                â€œContents of File.â€</a>
               </p>
             </div>
           </div>
@@ -10330,8 +10330,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-findutils" title="8.58.2. Contents of Findutils">Section&nbsp;8.58.2,
-                “Contents of Findutils.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-findutils" title="8.58.2.Â Contents of Findutils">Section&nbsp;8.58.2,
+                â€œContents of Findutils.â€</a>
               </p>
             </div>
           </div>
@@ -10388,8 +10388,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gawk" title="8.57.2. Contents of Gawk">Section&nbsp;8.57.2,
-                “Contents of Gawk.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gawk" title="8.57.2.Â Contents of Gawk">Section&nbsp;8.57.2,
+                â€œContents of Gawk.â€</a>
               </p>
             </div>
           </div>
@@ -10441,8 +10441,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-grep" title="8.33.2. Contents of Grep">Section&nbsp;8.33.2,
-                “Contents of Grep.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-grep" title="8.33.2.Â Contents of Grep">Section&nbsp;8.33.2,
+                â€œContents of Grep.â€</a>
               </p>
             </div>
           </div>
@@ -10493,8 +10493,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gzip" title="8.61.2. Contents of Gzip">Section&nbsp;8.61.2,
-                “Contents of Gzip.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gzip" title="8.61.2.Â Contents of Gzip">Section&nbsp;8.61.2,
+                â€œContents of Gzip.â€</a>
               </p>
             </div>
           </div>
@@ -10572,8 +10572,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-make" title="8.65.2. Contents of Make">Section&nbsp;8.65.2,
-                “Contents of Make.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-make" title="8.65.2.Â Contents of Make">Section&nbsp;8.65.2,
+                â€œContents of Make.â€</a>
               </p>
             </div>
           </div>
@@ -10590,7 +10590,7 @@ popd</kbd></pre>
             <div class="package" lang="en">
               <p>
                 The Patch package contains a program for modifying or
-                creating files by applying a <span class="quote">“<span class="quote">patch</span>”</span>
+                creating files by applying a <span class="quote">â€œ<span class="quote">patch</span>â€</span>
                 file typically created by the <span class="command"><strong>diff</strong></span> program.
               </p>
               <div class="segmentedlist">
@@ -10627,8 +10627,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-patch" title="8.66.2. Contents of Patch">Section&nbsp;8.66.2,
-                “Contents of Patch.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-patch" title="8.66.2.Â Contents of Patch">Section&nbsp;8.66.2,
+                â€œContents of Patch.â€</a>
               </p>
             </div>
           </div>
@@ -10679,8 +10679,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-sed" title="8.29.2. Contents of Sed">Section&nbsp;8.29.2,
-                “Contents of Sed.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-sed" title="8.29.2.Â Contents of Sed">Section&nbsp;8.29.2,
+                â€œContents of Sed.â€</a>
               </p>
             </div>
           </div>
@@ -10736,8 +10736,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-tar" title="8.67.2. Contents of Tar">Section&nbsp;8.67.2,
-                “Contents of Tar.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-tar" title="8.67.2.Â Contents of Tar">Section&nbsp;8.67.2,
+                â€œContents of Tar.â€</a>
               </p>
             </div>
           </div>
@@ -10802,8 +10802,8 @@ popd</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-xz" title="8.8.2. Contents of Xz">Section&nbsp;8.8.2,
-                “Contents of Xz.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-xz" title="8.8.2.Â Contents of Xz">Section&nbsp;8.8.2,
+                â€œContents of Xz.â€</a>
               </p>
             </div>
           </div>
@@ -10906,8 +10906,8 @@ cd       build</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-binutils" title="8.18.2. Contents of Binutils">Section&nbsp;8.18.2,
-                “Contents of Binutils.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-binutils" title="8.18.2.Â Contents of Binutils">Section&nbsp;8.18.2,
+                â€œContents of Binutils.â€</a>
               </p>
             </div>
           </div>
@@ -10957,7 +10957,7 @@ tar -xf ../mpc-1.3.1.tar.gz
 mv -v mpc-1.3.1 mpc</kbd></pre>
               <p>
                 If building on x86_64, change the default directory name for
-                64-bit libraries to <span class="quote">“<span class="quote">lib</span>”</span>:
+                64-bit libraries to <span class="quote">â€œ<span class="quote">lib</span>â€</span>:
               </p>
               <pre class="userinput"><kbd class="command">case $(uname -m) in
   x86_64)
@@ -11027,7 +11027,7 @@ cd       build</kbd></pre>
                       We are cross-compiling GCC, so it's impossible to build
                       target libraries (<code class="filename">libgcc</code>
                       and <code class="filename">libstdc++</code>) with the
-                      previously compiled GCC binaries—those binaries
+                      previously compiled GCC binariesâ€”those binaries
                       won't run on the host. The GCC build system will
                       attempt to use the host's C and C++ compilers as a
                       workaround by default. Building the GCC target
@@ -11072,8 +11072,8 @@ cd       build</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gcc" title="8.26.2. Contents of GCC">Section&nbsp;8.26.2,
-                “Contents of GCC.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gcc" title="8.26.2.Â Contents of GCC">Section&nbsp;8.26.2,
+                â€œContents of GCC.â€</a>
               </p>
             </div>
           </div>
@@ -11103,7 +11103,7 @@ cd       build</kbd></pre>
               This chapter shows how to build the last missing bits of the
               temporary system: the tools needed to build the various
               packages. Now that all circular dependencies have been
-              resolved, a <span class="quote">“<span class="quote">chroot</span>”</span> environment, completely
+              resolved, a <span class="quote">â€œ<span class="quote">chroot</span>â€</span> environment, completely
               isolated from the host operating system (except for the running
               kernel), can be used for the build.
             </p>
@@ -11116,8 +11116,8 @@ cd       build</kbd></pre>
               they are mounted by issuing the <span class="command"><strong>findmnt</strong></span> command.
             </p>
             <p>
-              Until <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-chroot" title="7.4. Entering the Chroot Environment">Section&nbsp;7.4,
-              “Entering the Chroot Environment”</a>, the commands
+              Until <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-chroot" title="7.4.Â Entering the Chroot Environment">Section&nbsp;7.4,
+              â€œEntering the Chroot Environmentâ€</a>, the commands
               must be run as <code class="systemitem">root</code>, with the
               <code class="envar">LFS</code> variable set. After entering
               chroot, all commands are run as <code class="systemitem">root</code>, fortunately without access to the OS
@@ -11200,8 +11200,8 @@ esac</kbd></pre>
                 may change the ownership or permissions of the device nodes
                 created by the kernel, and create new device nodes or
                 symlinks, to ease the work of distro maintainers and system
-                administrators. (See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-udev-device-node-creation" title="9.3.2.2. Device Node Creation">Section&nbsp;9.3.2.2,
-                “Device Node Creation”</a> for details.) If the
+                administrators. (See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-udev-device-node-creation" title="9.3.2.2.Â Device Node Creation">Section&nbsp;9.3.2.2,
+                â€œDevice Node Creationâ€</a> for details.) If the
                 host kernel supports <code class="systemitem">devtmpfs</code>, we can simply mount a
                 <code class="systemitem">devtmpfs</code> at <code class="filename">$LFS/dev</code> and rely on the kernel to populate
                 it.
@@ -11316,9 +11316,9 @@ fi</kbd></pre>
                 from within the chroot environment. If you leave this
                 environment for any reason (rebooting for example), ensure
                 that the virtual kernel filesystems are mounted as explained
-                in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-bindmount" title="7.3.1. Mounting and Populating /dev">Section&nbsp;7.3.1,
-                “Mounting and Populating /dev”</a> and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-kernfsmount" title="7.3.2. Mounting Virtual Kernel File Systems">Section&nbsp;7.3.2,
-                “Mounting Virtual Kernel File Systems”</a> and
+                in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-bindmount" title="7.3.1.Â Mounting and Populating /dev">Section&nbsp;7.3.1,
+                â€œMounting and Populating /devâ€</a> and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-kernfsmount" title="7.3.2.Â Mounting Virtual Kernel File Systems">Section&nbsp;7.3.2,
+                â€œMounting Virtual Kernel File Systemsâ€</a> and
                 enter chroot again before continuing with the installation.
               </p>
             </div>
@@ -11378,19 +11378,19 @@ install -dv -m 1777 /tmp /var/tmp</kbd></pre>
             <p>
               Directories are, by default, created with permission mode 755,
               but this is not desirable everywhere. In the commands above,
-              two changes are made—one to the home directory of user
+              two changes are madeâ€”one to the home directory of user
               <code class="systemitem">root</code>, and another to the
               directories for temporary files.
             </p>
             <p>
               The first mode change ensures that not just anybody can enter
-              the <code class="filename">/root</code> directory—just
+              the <code class="filename">/root</code> directoryâ€”just
               like a normal user would do with his or her own home directory.
               The second mode change makes sure that any user can write to
               the <code class="filename">/tmp</code> and <code class="filename">/var/tmp</code> directories, but cannot remove
               another user's files from them. The latter is prohibited by the
-              so-called <span class="quote">“<span class="quote">sticky
-              bit,</span>”</span> the highest bit (1) in the 1777 bit
+              so-called <span class="quote">â€œ<span class="quote">sticky
+              bit,</span>â€</span> the highest bit (1) in the 1777 bit
               mask.
             </p>
             <div class="sect2" lang="en">
@@ -11453,7 +11453,7 @@ install -dv -m 1777 /tmp /var/tmp</kbd></pre>
 EOF</kbd></pre>
             <p>
               In order for user <code class="systemitem">root</code> to be
-              able to login and for the name <span class="quote">“<span class="quote">root</span>”</span> to
+              able to login and for the name <span class="quote">â€œ<span class="quote">root</span>â€</span> to
               be recognized, there must be relevant entries in the
               <code class="filename">/etc/passwd</code> and <code class="filename">/etc/group</code> files.
             </p>
@@ -11505,7 +11505,7 @@ users:x:999:
 nogroup:x:65534:</code>
 EOF</kbd></pre>
             <p>
-              The created groups are not part of any standard—they are
+              The created groups are not part of any standardâ€”they are
               groups decided on in part by the requirements of the Udev
               configuration in Chapter 9, and in part by common conventions
               employed by a number of existing Linux distributions. In
@@ -11522,14 +11522,14 @@ EOF</kbd></pre>
             <p>
               The ID 65534 is used by the kernel for NFS and separate user
               namespaces for unmapped users and groups (those exist on the
-              NFS server or the parent user namespace, but <span class="quote">“<span class="quote">do not
-              exist</span>”</span> on the local machine or in the
+              NFS server or the parent user namespace, but <span class="quote">â€œ<span class="quote">do not
+              exist</span>â€</span> on the local machine or in the
               separate namespace). We assign <code class="systemitem">nobody</code> and <code class="systemitem">nogroup</code> to avoid an unnamed ID. But other
               distros may treat this ID differently, so any portable program
               should not depend on this assignment.
             </p>
             <p>
-              Some tests in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>
+              Some tests in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>
               need a regular user. We add this user here and delete this
               account at the end of that chapter.
             </p>
@@ -11537,8 +11537,8 @@ EOF</kbd></pre>
 echo "tester:x:101:" &gt;&gt; /etc/group
 install -o tester -d /home/tester</kbd></pre>
             <p>
-              To remove the <span class="quote">“<span class="quote">I
-              have no name!</span>”</span> prompt, start a new shell.
+              To remove the <span class="quote">â€œ<span class="quote">I
+              have no name!</span>â€</span> prompt, start a new shell.
               Since the <code class="filename">/etc/passwd</code> and
               <code class="filename">/etc/group</code> files have been
               created, user name and group name resolution will now work:
@@ -11646,8 +11646,8 @@ chmod -v 600  /var/log/btmp</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gettext" title="8.31.2. Contents of Gettext">Section&nbsp;8.31.2,
-                “Contents of Gettext.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gettext" title="8.31.2.Â Contents of Gettext">Section&nbsp;8.31.2,
+                â€œContents of Gettext.â€</a>
               </p>
             </div>
           </div>
@@ -11714,8 +11714,8 @@ chmod -v 600  /var/log/btmp</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-bison" title="8.32.2. Contents of Bison">Section&nbsp;8.32.2,
-                “Contents of Bison.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-bison" title="8.32.2.Â Contents of Bison">Section&nbsp;8.32.2,
+                â€œContents of Bison.â€</a>
               </p>
             </div>
           </div>
@@ -11791,8 +11791,8 @@ chmod -v 600  /var/log/btmp</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-perl" title="8.41.2. Contents of Perl">Section&nbsp;8.41.2,
-                “Contents of Perl.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-perl" title="8.41.2.Â Contents of Perl">Section&nbsp;8.41.2,
+                â€œContents of Perl.â€</a>
               </p>
             </div>
           </div>
@@ -11837,7 +11837,7 @@ chmod -v 600  /var/log/btmp</kbd></pre>
                 </h3>
                 <p>
                   There are two package files whose name starts with
-                  <span class="quote">“<span class="quote">python</span>”</span>. The one to extract
+                  <span class="quote">â€œ<span class="quote">python</span>â€</span>. The one to extract
                   from is <code class="filename">Python-3.11.2.tar.xz</code>
                   (notice the uppercase first letter).
                 </p>
@@ -11885,10 +11885,10 @@ chmod -v 600  /var/log/btmp</kbd></pre>
                   dependencies are not installed yet. The building system
                   still attempts to build them however, so the compilation of
                   some files will fail and the compiler message may seem to
-                  indicate <span class="quote">“<span class="quote">fatal error</span>”</span>. The message
+                  indicate <span class="quote">â€œ<span class="quote">fatal error</span>â€</span>. The message
                   should be ignored. Just make sure the toplevel <span class="command"><strong>make</strong></span> command has not
                   failed. The optional modules are not needed now and they
-                  will be built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>.
+                  will be built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>.
                 </p>
               </div>
               <p>
@@ -11898,8 +11898,8 @@ chmod -v 600  /var/log/btmp</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-python" title="8.50.2. Contents of Python 3">Section&nbsp;8.50.2,
-                “Contents of Python 3.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-python" title="8.50.2.Â Contents of Python 3">Section&nbsp;8.50.2,
+                â€œContents of Python 3.â€</a>
               </p>
             </div>
           </div>
@@ -11950,8 +11950,8 @@ chmod -v 600  /var/log/btmp</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-texinfo" title="8.68.2. Contents of Texinfo">Section&nbsp;8.68.2,
-                “Contents of Texinfo.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-texinfo" title="8.68.2.Â Contents of Texinfo">Section&nbsp;8.68.2,
+                â€œContents of Texinfo.â€</a>
               </p>
             </div>
           </div>
@@ -12079,8 +12079,8 @@ chmod -v 600  /var/log/btmp</kbd></pre>
             </div>
             <div class="content" lang="en">
               <p>
-                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-utillinux" title="8.73.2. Contents of Util-linux">Section&nbsp;8.73.2,
-                “Contents of Util-linux.”</a>
+                Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-utillinux" title="8.73.2.Â Contents of Util-linux">Section&nbsp;8.73.2,
+                â€œContents of Util-linux.â€</a>
               </p>
             </div>
           </div>
@@ -12141,7 +12141,7 @@ chmod -v 600  /var/log/btmp</kbd></pre>
                 <p>
                   All the remaining steps in this section are optional.
                   Nevertheless, as soon as you begin installing packages in
-                  <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>,
+                  <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>,
                   the temporary files will be overwritten. So it may be a
                   good idea to do a backup of the current system as described
                   below.
@@ -12177,8 +12177,8 @@ chmod -v 600  /var/log/btmp</kbd></pre>
                   <code class="envar">LFS</code>.
                 </p>
                 <p>
-                  This has been discussed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-partitioning-aboutlfs" title="2.6. Setting The $LFS Variable">Section&nbsp;2.6,
-                  “Setting The $LFS Variable”</a>.
+                  This has been discussed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-partitioning-aboutlfs" title="2.6.Â Setting The $LFS Variable">Section&nbsp;2.6,
+                  â€œSetting The $LFS Variableâ€</a>.
                 </p>
               </div>
               <p>
@@ -12222,7 +12222,7 @@ tar -cJpf $HOME/lfs-temp-tools-11.3.tar.xz .</kbd></pre>
                 </h3>
                 <p>
                   If continuing to chapter 8, don't forget to reenter the
-                  chroot environment as explained in the <span class="quote">“<span class="quote">Important</span>”</span> box below.
+                  chroot environment as explained in the <span class="quote">â€œ<span class="quote">Important</span>â€</span> box below.
                 </p>
               </div>
             </div>
@@ -12269,10 +12269,10 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
                   restart building using a restore, remember to check that
                   the virtual file systems are still mounted (<span class="command"><strong>findmnt | grep $LFS</strong></span>). If
                   they are not mounted, remount them now as described in
-                  <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-kernfs" title="7.3. Preparing Virtual Kernel File Systems">Section&nbsp;7.3,
-                  “Preparing Virtual Kernel File Systems”</a> and
-                  re-enter the chroot environment (see <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-chroot" title="7.4. Entering the Chroot Environment">Section&nbsp;7.4,
-                  “Entering the Chroot Environment”</a>) before
+                  <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-kernfs" title="7.3.Â Preparing Virtual Kernel File Systems">Section&nbsp;7.3,
+                  â€œPreparing Virtual Kernel File Systemsâ€</a> and
+                  re-enter the chroot environment (see <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-chroot" title="7.4.Â Entering the Chroot Environment">Section&nbsp;7.4,
+                  â€œEntering the Chroot Environmentâ€</a>) before
                   continuing.
                 </p>
               </div>
@@ -12368,7 +12368,7 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
               </h3>
               <p>
                 The SBU values and required disk space include test suite
-                data for all applicable packages in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>.
+                data for all applicable packages in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>.
                 SBU values have been calculated using four CPU cores (-j4)
                 for all operations unless specified otherwise.
               </p>
@@ -12420,7 +12420,7 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
               making it easier to remove and upgrade packages. A good package
               manager will also handle the configuration files specially to
               keep the user configuration when the package is reinstalled or
-              upgraded. Before you begin to wonder, NO—this section
+              upgraded. Before you begin to wonder, NOâ€”this section
               will not talk about nor recommend any particular package
               manager. What it does provide is a roundup of the more popular
               techniques and how they work. The perfect package manager for
@@ -12437,7 +12437,7 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
                 <li class="listitem">
                   <p>
                     Dealing with package management takes the focus away from
-                    the goals of these books—teaching how a Linux
+                    the goals of these booksâ€”teaching how a Linux
                     system is built.
                   </p>
                 </li>
@@ -12523,7 +12523,7 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
                       installation of some package) will reset the symlink
                       <code class="filename">libfoo.so.1</code> to point to
                       the old library file because it seems to be a
-                      <span class="quote">“<span class="quote">newer</span>”</span> version; its version
+                      <span class="quote">â€œ<span class="quote">newer</span>â€</span> version; its version
                       number is larger. This situation may arise if you have
                       to downgrade a package, or if the authors change the
                       versioning scheme for library files.
@@ -12857,8 +12857,8 @@ make DESTDIR=/usr/pkg/libfoo/1.1 install</kbd></pre>
                 </p>
               </div>
               <p>
-                Finally, the new system has to be made bootable via <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-bootable-grub" title="10.4. Using GRUB to Set Up the Boot Process">Section&nbsp;10.4,
-                “Using GRUB to Set Up the Boot Process”</a>.
+                Finally, the new system has to be made bootable via <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-bootable-grub" title="10.4.Â Using GRUB to Set Up the Boot Process">Section&nbsp;10.4,
+                â€œUsing GRUB to Set Up the Boot Processâ€</a>.
               </p>
             </div>
           </div>
@@ -14101,7 +14101,7 @@ mkdir -pv /etc/ld.so.conf.d</kbd></pre>
                       <td>
                         <p>
                           Dummy library containing no functions. Previously
-                          contained code for <span class="quote">“<span class="quote">standard</span>”</span> functions
+                          contained code for <span class="quote">â€œ<span class="quote">standard</span>â€</span> functions
                           used in many different Unix utilities. These
                           functions are now in <code class="filename">libc</code>
                         </p>
@@ -14441,7 +14441,7 @@ done</kbd></pre>
                           sorting text compression algorithm with Huffman
                           coding; the compression rate is better than that
                           achieved by more conventional compressors using
-                          <span class="quote">“<span class="quote">Lempel-Ziv</span>”</span> algorithms,
+                          <span class="quote">â€œ<span class="quote">Lempel-Ziv</span>â€</span> algorithms,
                           like <span class="command"><strong>gzip</strong></span>
                         </p>
                       </td>
@@ -15143,7 +15143,7 @@ done</kbd></pre>
                       <td>
                         <p>
                           Tries to classify each given file; it does this by
-                          performing several tests—file system tests,
+                          performing several testsâ€”file system tests,
                           magic number tests, and language tests
                         </p>
                       </td>
@@ -15788,8 +15788,8 @@ sed -e "s|$SRCDIR/unix/pkgs/itcl4.2.3|/usr/lib/itcl4.2.3|" \
 
 unset SRCDIR</kbd></pre>
               <p>
-                The various <span class="quote">“<span class="quote">sed</span>”</span> instructions after the
-                <span class="quote">“<span class="quote">make</span>”</span> command remove references
+                The various <span class="quote">â€œ<span class="quote">sed</span>â€</span> instructions after the
+                <span class="quote">â€œ<span class="quote">make</span>â€</span> command remove references
                 to the build directory from the configuration files and
                 replace them with the install directory. This is not
                 mandatory for the remainder of LFS, but may be needed if a
@@ -16681,8 +16681,8 @@ rm -fv /usr/share/man/man1/{gprofng,gp-*}.1</kbd></pre>
                       </td>
                       <td>
                         <p>
-                          A library for dealing with opcodes—the
-                          <span class="quote">“<span class="quote">readable text</span>”</span> versions
+                          A library for dealing with opcodesâ€”the
+                          <span class="quote">â€œ<span class="quote">readable text</span>â€</span> versions
                           of instructions for the processor; it is used for
                           building utilities like <span class="command"><strong>objdump</strong></span>
                         </p>
@@ -17617,8 +17617,8 @@ make install-html</kbd></pre>
                 Disable the installation of the <span class="command"><strong>groups</strong></span> program and its man
                 pages, as Coreutils provides a better version. Also, prevent
                 the installation of manual pages that were already installed
-                in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-man-pages" title="8.3. Man-pages-6.03">Section&nbsp;8.3,
-                “Man-pages-6.03”</a>:
+                in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-man-pages" title="8.3.Â Man-pages-6.03">Section&nbsp;8.3,
+                â€œMan-pages-6.03â€</a>:
               </p>
               <pre class="userinput"><kbd class="command">sed -i 's/groups$(EXEEXT) //' src/Makefile.in
 find man -name Makefile.in -exec sed -i 's/groups\.1 / /'   {} \;
@@ -17780,12 +17780,12 @@ useradd -D --gid 999</kbd></pre>
                       group with an ID equal to this number on your system,
                       then the first time you use <span class="command"><strong>useradd</strong></span> without the
                       <em class="parameter"><code>-g</code></em> parameter,
-                      an error message will be generated—<code class="computeroutput">useradd: unknown GID 999</code>, even
+                      an error message will be generatedâ€”<code class="computeroutput">useradd: unknown GID 999</code>, even
                       though the account has been created correctly. That is
                       why we created the group <code class="systemitem">users</code> with this group ID in
-                      <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-createfiles" title="7.6. Creating Essential Files and Symlinks">Section&nbsp;7.6,
-                      “Creating Essential Files and
-                      Symlinks”</a>.
+                      <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-createfiles" title="7.6.Â Creating Essential Files and Symlinks">Section&nbsp;7.6,
+                      â€œCreating Essential Files and
+                      Symlinksâ€</a>.
                     </p>
                   </dd>
                   <dt>
@@ -18355,7 +18355,7 @@ useradd -D --gid 999</kbd></pre>
               </h3>
               <p>
                 If building on x86_64, change the default directory name for
-                64-bit libraries to <span class="quote">“<span class="quote">lib</span>”</span>:
+                64-bit libraries to <span class="quote">â€œ<span class="quote">lib</span>â€</span>:
               </p>
               <pre class="userinput"><kbd class="command">case $(uname -m) in
   x86_64)
@@ -20654,7 +20654,7 @@ chmod -v 0755 /usr/lib/preloadable_libintl.so</kbd></pre>
               </p>
               <pre class="userinput"><kbd class="command">make</kbd></pre>
               <p>
-                Skip down to <span class="quote">“<span class="quote">Install the package</span>”</span> if not
+                Skip down to <span class="quote">â€œ<span class="quote">Install the package</span>â€</span> if not
                 running the test suite.
               </p>
               <p>
@@ -21746,7 +21746,7 @@ EOF</kbd></pre>
 export BUILD_BZIP2=0</kbd></pre>
               <p>
                 To have full control over the way Perl is set up, you can
-                remove the <span class="quote">“<span class="quote">-des</span>”</span> options from the following
+                remove the <span class="quote">â€œ<span class="quote">-des</span>â€</span> options from the following
                 command and hand-pick the way this package is built.
                 Alternatively, use the command exactly as shown below to use
                 the defaults that Perl auto-detects:
@@ -22644,7 +22644,7 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-0.51.0/I18N-HOWTO</kbd>
                           Produces shell scripts that automatically configure
                           software source code packages to adapt to many
                           kinds of Unix-like systems; the configuration
-                          scripts it produces are independent—running
+                          scripts it produces are independentâ€”running
                           them does not require the <span class="command"><strong>autoconf</strong></span> program
                         </p>
                       </td>
@@ -22984,8 +22984,8 @@ make MANSUFFIX=ssl install</kbd></pre>
                 <p>
                   However, any running programs linked to those libraries
                   need to be stopped and restarted. Read the related entries
-                  in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#pkgmgmt-upgrade-issues" title="8.2.1. Upgrade Issues">Section&nbsp;8.2.1,
-                  “Upgrade Issues”</a> for details.
+                  in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#pkgmgmt-upgrade-issues" title="8.2.1.Â Upgrade Issues">Section&nbsp;8.2.1,
+                  â€œUpgrade Issuesâ€</a> for details.
                 </p>
               </div>
             </div>
@@ -23163,7 +23163,7 @@ make MANSUFFIX=ssl install</kbd></pre>
               <pre class="userinput"><kbd class="command">make</kbd></pre>
               <p>
                 The test suite of this package requires raw kernel headers
-                (not the <span class="quote">“<span class="quote">sanitized</span>”</span> kernel headers
+                (not the <span class="quote">â€œ<span class="quote">sanitized</span>â€</span> kernel headers
                 installed earlier), which are beyond the scope of LFS.
               </p>
               <p>
@@ -24388,7 +24388,7 @@ FORCE_UNSAFE_CONFIGURE=1 ./configure \
               </p>
               <pre class="userinput"><kbd class="command">make</kbd></pre>
               <p>
-                Skip down to <span class="quote">“<span class="quote">Install the package</span>”</span> if not
+                Skip down to <span class="quote">â€œ<span class="quote">Install the package</span>â€</span> if not
                 running the test suite.
               </p>
               <p>
@@ -25789,7 +25789,7 @@ sed -i 's/"1"/"8"/' /usr/share/man/man8/chroot.8</kbd></pre>
                       </td>
                       <td>
                         <p>
-                          Repeatedly outputs <span class="quote">“<span class="quote">y</span>”</span>, or a given string,
+                          Repeatedly outputs <span class="quote">â€œ<span class="quote">y</span>â€</span>, or a given string,
                           until killed
                         </p>
                       </td>
@@ -26111,8 +26111,8 @@ sed -i 's/"1"/"8"/' /usr/share/man/man8/chroot.8</kbd></pre>
                   <dd>
                     <p>
                       This variable ensures that the previous hard link
-                      installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-gawk" title="6.9. Gawk-5.2.1">Section&nbsp;6.9,
-                      “Gawk-5.2.1”</a> is updated here.
+                      installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-gawk" title="6.9.Â Gawk-5.2.1">Section&nbsp;6.9,
+                      â€œGawk-5.2.1â€</a> is updated here.
                     </p>
                   </dd>
                 </dl>
@@ -26411,7 +26411,7 @@ su tester -c "PATH=$PATH make check"</kbd></pre>
                 Elsewhere, <em class="parameter"><code>PAGE=A4</code></em>
                 may be more suitable. While the default paper size is
                 configured during compilation, it can be overridden later by
-                echoing either <span class="quote">“<span class="quote">A4</span>”</span> or <span class="quote">“<span class="quote">letter</span>”</span> to the <code class="filename">/etc/papersize</code> file.
+                echoing either <span class="quote">â€œ<span class="quote">A4</span>â€</span> or <span class="quote">â€œ<span class="quote">letter</span>â€</span> to the <code class="filename">/etc/papersize</code> file.
               </p>
               <p>
                 Prepare Groff for compilation:
@@ -27136,7 +27136,7 @@ su tester -c "PATH=$PATH make check"</kbd></pre>
                 </p>
                 <pre class="userinput"><kbd class="command">unset {C,CPP,CXX,LD}FLAGS</kbd></pre>
                 <p>
-                  Don't try <span class="quote">“<span class="quote">tuning</span>”</span> this package with
+                  Don't try <span class="quote">â€œ<span class="quote">tuning</span>â€</span> this package with
                   custom compilation flags. This package is a bootloader. The
                   low-level operations in the source code may be broken by
                   aggressive optimization.
@@ -27200,8 +27200,8 @@ su tester -c "PATH=$PATH make check"</kbd></pre>
 mv -v /etc/bash_completion.d/grub /usr/share/bash-completion/completions</kbd></pre>
               <p>
                 Making your LFS system bootable with GRUB will be discussed
-                in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-bootable-grub" title="10.4. Using GRUB to Set Up the Boot Process">Section&nbsp;10.4,
-                “Using GRUB to Set Up the Boot Process”</a>.
+                in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-bootable-grub" title="10.4.Â Using GRUB to Set Up the Boot Process">Section&nbsp;10.4,
+                â€œUsing GRUB to Set Up the Boot Processâ€</a>.
               </p>
             </div>
             <div class="content" lang="en">
@@ -27812,7 +27812,7 @@ mv -v /etc/bash_completion.d/grub /usr/share/bash-completion/completions</kbd></
                         <p>
                           Re-compresses files from <span class="command"><strong>compress</strong></span> format
                           to <span class="command"><strong>gzip</strong></span>
-                          format—<code class="filename">.Z</code> to
+                          formatâ€”<code class="filename">.Z</code> to
                           <code class="filename">.gz</code>
                         </p>
                       </td>
@@ -28255,7 +28255,7 @@ sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in</kbd></pre>
                 <p>
                   For some languages (e.g., Belarusian) the Kbd package
                   doesn't provide a useful keymap where the stock
-                  <span class="quote">“<span class="quote">by</span>”</span> keymap assumes the
+                  <span class="quote">â€œ<span class="quote">by</span>â€</span> keymap assumes the
                   ISO-8859-5 encoding, and the CP1251 keymap is normally
                   used. Users of such languages have to download working
                   keymaps separately.
@@ -28821,7 +28821,7 @@ cp -R -v docs/doc/* /usr/share/doc/kbd-2.5.1</kbd></pre>
             <div class="package" lang="en">
               <p>
                 The Patch package contains a program for modifying or
-                creating files by applying a <span class="quote">“<span class="quote">patch</span>”</span>
+                creating files by applying a <span class="quote">â€œ<span class="quote">patch</span>â€</span>
                 file typically created by the <span class="command"><strong>diff</strong></span> program.
               </p>
               <div class="segmentedlist">
@@ -29302,8 +29302,8 @@ popd</kbd></pre>
                   Alternatives to Vim
                 </h3>
                 <p>
-                  If you prefer another editor—such as Emacs, Joe, or
-                  Nano—please refer to <a class="ulink" href="https://www.linuxfromscratch.org/blfs/view/11.3/postlfs/editors.html">
+                  If you prefer another editorâ€”such as Emacs, Joe, or
+                  Nanoâ€”please refer to <a class="ulink" href="https://www.linuxfromscratch.org/blfs/view/11.3/postlfs/editors.html">
                   https://www.linuxfromscratch.org/blfs/view/11.3/postlfs/editors.html</a>
                   for suggested installation instructions.
                 </p>
@@ -29378,9 +29378,9 @@ done</kbd></pre>
               <p>
                 By default, <span class="command"><strong>vim</strong></span>
                 runs in vi-incompatible mode. This may be new to users who
-                have used other editors in the past. The <span class="quote">“<span class="quote">nocompatible</span>”</span> setting is included
+                have used other editors in the past. The <span class="quote">â€œ<span class="quote">nocompatible</span>â€</span> setting is included
                 below to highlight the fact that a new behavior is being
-                used. It also reminds those who would change to <span class="quote">“<span class="quote">compatible</span>”</span> mode that it should
+                used. It also reminds those who would change to <span class="quote">â€œ<span class="quote">compatible</span>â€</span> mode that it should
                 be the first setting in the configuration file. This is
                 necessary because it changes other settings, and overrides
                 must come after this setting. Create a default <span class="command"><strong>vim</strong></span> configuration file by
@@ -29407,7 +29407,7 @@ EOF</kbd></pre>
                 The <em class="parameter"><code>set nocompatible</code></em>
                 setting makes <span class="command"><strong>vim</strong></span> behave in a more useful
                 way (the default) than the vi-compatible manner. Remove the
-                <span class="quote">“<span class="quote">no</span>”</span> to keep the old <span class="command"><strong>vi</strong></span> behavior. The <em class="parameter"><code>set backspace=2</code></em> setting allows
+                <span class="quote">â€œ<span class="quote">no</span>â€</span> to keep the old <span class="command"><strong>vi</strong></span> behavior. The <em class="parameter"><code>set backspace=2</code></em> setting allows
                 backspacing over line breaks, autoindents, and the start of
                 an insert. The <em class="parameter"><code>syntax
                 on</code></em> parameter enables vim's syntax highlighting.
@@ -33407,8 +33407,8 @@ EOF</kbd></pre>
               system completely unusable. To avoid this problem we copy some
               libraries and binaries into <code class="filename">/tmp</code>,
               strip them there, then reinstall them with the <span class="command"><strong>install</strong></span> command. (The related
-              entry in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#pkgmgmt-upgrade-issues" title="8.2.1. Upgrade Issues">Section&nbsp;8.2.1, “Upgrade
-              Issues”</a> gives the rationale for using the
+              entry in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#pkgmgmt-upgrade-issues" title="8.2.1.Â Upgrade Issues">Section&nbsp;8.2.1, â€œUpgrade
+              Issuesâ€</a> gives the rationale for using the
               <span class="command"><strong>install</strong></span> command
               here.)
             </p>
@@ -33420,7 +33420,7 @@ EOF</kbd></pre>
                 The ELF loader's name is ld-linux-x86-64.so.2 on 64-bit
                 systems and ld-linux.so.2 on 32-bit systems. The construct
                 below selects the correct name for the current architecture,
-                excluding anything ending with <span class="quote">“<span class="quote">g</span>”</span>, in
+                excluding anything ending with <span class="quote">â€œ<span class="quote">g</span>â€</span>, in
                 case the commands below have already been run.
               </p>
             </div>
@@ -33529,8 +33529,8 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
               BLFS section "About Libtool Archive (.la) files"</a>.
             </p>
             <p>
-              The compiler built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="Chapter 6. Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
-              and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="Chapter 7. Entering Chroot and Building Additional Temporary Tools">
+              The compiler built in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-temporary-tools" title="ChapterÂ 6.Â Cross Compiling Temporary Tools">Chapter&nbsp;6</a>
+              and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="ChapterÂ 7.Â Entering Chroot and Building Additional Temporary Tools">
               Chapter&nbsp;7</a> is still partially installed and not needed
               anymore. Remove it with:
             </p>
@@ -33594,14 +33594,14 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
               </p>
               <div class="literallayout">
                 <p>
-                  0&nbsp;—&nbsp;halt<br>
-                  1&nbsp;—&nbsp;Single&nbsp;user&nbsp;mode<br>
-                  2&nbsp;—&nbsp;User&nbsp;definable<br>
-                  3&nbsp;—&nbsp;Full&nbsp;multiuser&nbsp;mode<br>
-                  4&nbsp;—&nbsp;User&nbsp;definable<br>
-                  5&nbsp;—&nbsp;Full&nbsp;multiuser&nbsp;mode&nbsp;with&nbsp;display&nbsp;manager<br>
+                  0&nbsp;â€”&nbsp;halt<br>
+                  1&nbsp;â€”&nbsp;Single&nbsp;user&nbsp;mode<br>
+                  2&nbsp;â€”&nbsp;User&nbsp;definable<br>
+                  3&nbsp;â€”&nbsp;Full&nbsp;multiuser&nbsp;mode<br>
+                  4&nbsp;â€”&nbsp;User&nbsp;definable<br>
+                  5&nbsp;â€”&nbsp;Full&nbsp;multiuser&nbsp;mode&nbsp;with&nbsp;display&nbsp;manager<br>
 
-                  6&nbsp;—&nbsp;reboot
+                  6&nbsp;â€”&nbsp;reboot
                 </p>
               </div>
               <p>
@@ -34050,7 +34050,7 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
               </div>
             </div>
             <p>
-              In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>,
+              In <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>,
               we installed the udev daemon when <span class="phrase">eudev</span> was built. Before we go into the details
               regarding how udev works, a brief history of previous methods
               of handling devices is in order.
@@ -34195,10 +34195,10 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                   identifiers of devices supported by a module. For example,
                   the <span class="emphasis"><em>snd-fm801</em></span> driver
                   supports PCI devices with vendor ID 0x1319 and device ID
-                  0x0801, and has an alias of <span class="quote">“<span class="quote">pci:v00001319d00000801sv*sd*bc04sc01i*</span>”</span>.
+                  0x0801, and has an alias of <span class="quote">â€œ<span class="quote">pci:v00001319d00000801sv*sd*bc04sc01i*</span>â€</span>.
                   For most devices, the bus driver exports the alias of the
                   driver that would handle the device via <code class="systemitem">sysfs</code>. E.g., the <code class="filename">/sys/bus/pci/devices/0000:00:0d.0/modalias</code>
-                  file might contain the string <span class="quote">“<span class="quote">pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</span>”</span>.
+                  file might contain the string <span class="quote">â€œ<span class="quote">pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</span>â€</span>.
                   The default rules provided with udev will cause
                   <span class="command"><strong>udevd</strong></span> to call
                   out to <span class="command"><strong>/sbin/modprobe</strong></span> with the
@@ -34291,7 +34291,7 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                   Expect this issue to be fixed in later kernel versions.
                 </p>
                 <p>
-                  Udev is not intended to load <span class="quote">“<span class="quote">wrapper</span>”</span> drivers such as
+                  Udev is not intended to load <span class="quote">â€œ<span class="quote">wrapper</span>â€</span> drivers such as
                   <span class="emphasis"><em>snd-pcm-oss</em></span> and
                   non-hardware drivers such as <span class="emphasis"><em>loop</em></span> at all.
                 </p>
@@ -34309,25 +34309,25 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                   </div>
                 </div>
                 <p>
-                  If the <span class="quote">“<span class="quote">wrapper</span>”</span> module only enhances
+                  If the <span class="quote">â€œ<span class="quote">wrapper</span>â€</span> module only enhances
                   the functionality provided by some other module (e.g.,
                   <span class="emphasis"><em>snd-pcm-oss</em></span> enhances
                   the functionality of <span class="emphasis"><em>snd-pcm</em></span> by making the sound
                   cards available to OSS applications), configure
                   <span class="command"><strong>modprobe</strong></span> to
                   load the wrapper after udev loads the wrapped module. To do
-                  this, add a <span class="quote">“<span class="quote">softdep</span>”</span> line to the
+                  this, add a <span class="quote">â€œ<span class="quote">softdep</span>â€</span> line to the
                   corresponding <code class="filename">/etc/modprobe.d/<em class="replaceable"><code>&lt;filename&gt;</code></em>.conf</code>
                   file. For example:
                 </p>
                 <pre class="screen"><code class="literal">softdep snd-pcm post: snd-pcm-oss</code></pre>
                 <p>
-                  Note that the <span class="quote">“<span class="quote">softdep</span>”</span> command also allows
+                  Note that the <span class="quote">â€œ<span class="quote">softdep</span>â€</span> command also allows
                   <code class="literal">pre:</code> dependencies, or a
                   mixture of both <code class="literal">pre:</code> and
                   <code class="literal">post:</code> dependencies. See the
                   <code class="filename">modprobe.d(5)</code> manual page for
-                  more information on <span class="quote">“<span class="quote">softdep</span>”</span> syntax and
+                  more information on <span class="quote">â€œ<span class="quote">softdep</span>â€</span> syntax and
                   capabilities.
                 </p>
                 <p>
@@ -34445,14 +34445,14 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                 <p>
                   This is due to the fact that udev, by design, handles
                   uevents and loads modules in parallel, and thus in an
-                  unpredictable order. This will never be <span class="quote">“<span class="quote">fixed</span>”</span>. You should not rely
+                  unpredictable order. This will never be <span class="quote">â€œ<span class="quote">fixed</span>â€</span>. You should not rely
                   upon the kernel device names being stable. Instead, create
                   your own rules that make symlinks with stable names based
                   on some stable attributes of the device, such as a serial
                   number or the output of various *_id utilities installed by
-                  udev. See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-symlinks" title="9.4. Managing Devices">Section&nbsp;9.4,
-                  “Managing Devices”</a> and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-network" title="9.5. General Network Configuration">Section&nbsp;9.5,
-                  “General Network Configuration”</a> for
+                  udev. See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-symlinks" title="9.4.Â Managing Devices">Section&nbsp;9.4,
+                  â€œManaging Devicesâ€</a> and <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-network" title="9.5.Â General Network Configuration">Section&nbsp;9.5,
+                  â€œGeneral Network Configurationâ€</a> for
                   examples.
                 </p>
               </div>
@@ -34504,8 +34504,8 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                 slot, or MAC address. The purpose of this naming convention
                 is to ensure that network devices are named consistently, not
                 based on when the network card was discovered. In older
-                versions of Linux—on a computer with two network cards
-                made by Intel and Realtek, for instance—the network
+                versions of Linuxâ€”on a computer with two network cards
+                made by Intel and Realtek, for instanceâ€”the network
                 card manufactured by Intel might have become eth0 while the
                 Realtek card became eth1. After a reboot, the cards would
                 sometimes get renumbered the other way around.
@@ -34534,8 +34534,8 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                   that have just one ethernet device of a particular type.
                   Laptops often have two ethernet connections named eth0 and
                   wlan0; such laptops can also use this method. The command
-                  line is in the GRUB configuration file. See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#grub-cfg" title="10.4.4. Creating the GRUB Configuration File">Section&nbsp;10.4.4,
-                  “Creating the GRUB Configuration File”</a>.
+                  line is in the GRUB configuration file. See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#grub-cfg" title="10.4.4.Â Creating the GRUB Configuration File">Section&nbsp;10.4.4,
+                  â€œCreating the GRUB Configuration Fileâ€</a>.
                 </p>
               </div>
               <div class="sect3">
@@ -34667,10 +34667,10 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                 script use.
               </p>
               <p>
-                First, the script can operate in <span class="quote">“<span class="quote">by-path</span>”</span> mode (used by default
+                First, the script can operate in <span class="quote">â€œ<span class="quote">by-path</span>â€</span> mode (used by default
                 for USB and FireWire devices), where the rules it creates
                 depend on the physical path to the CD or DVD device. Second,
-                it can operate in <span class="quote">“<span class="quote">by-id</span>”</span> mode (default for IDE and
+                it can operate in <span class="quote">â€œ<span class="quote">by-id</span>â€</span> mode (default for IDE and
                 SCSI devices), where the rules it creates depend on
                 identification strings stored on the CD or DVD device itself.
                 The path is determined by udev's <span class="command"><strong>path_id</strong></span> script, and the
@@ -34686,11 +34686,11 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                 and/or slots that it plugs into) to change, for example
                 because you plan on moving the drive to a different IDE port
                 or a different USB connector, then you should use the
-                <span class="quote">“<span class="quote">by-id</span>”</span> mode. On the other hand,
+                <span class="quote">â€œ<span class="quote">by-id</span>â€</span> mode. On the other hand,
                 if you expect the device's identification to change, for
                 example because it may die, and you intend to replace it with
                 a different device that plugs into the same connectors, then
-                you should use the <span class="quote">“<span class="quote">by-path</span>”</span> mode.
+                you should use the <span class="quote">â€œ<span class="quote">by-path</span>â€</span> mode.
               </p>
               <p>
                 If either type of change is possible with your drive, then
@@ -34720,17 +34720,17 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
               <pre class="userinput"><kbd class="command">udevadm test /sys/block/hdd</kbd></pre>
               <p>
                 Look at the lines containing the output of various *_id
-                programs. The <span class="quote">“<span class="quote">by-id</span>”</span> mode will use the
+                programs. The <span class="quote">â€œ<span class="quote">by-id</span>â€</span> mode will use the
                 ID_SERIAL value if it exists and is not empty, otherwise it
                 will use a combination of ID_MODEL and ID_REVISION. The
-                <span class="quote">“<span class="quote">by-path</span>”</span> mode will use the
+                <span class="quote">â€œ<span class="quote">by-path</span>â€</span> mode will use the
                 ID_PATH value.
               </p>
               <p>
                 If the default mode is not suitable for your situation, then
                 the following modification can be made to the <code class="filename">/etc/udev/rules.d/83-cdrom-symlinks.rules</code>
-                file, as follows (where <em class="replaceable"><code>mode</code></em> is one of <span class="quote">“<span class="quote">by-id</span>”</span>
-                or <span class="quote">“<span class="quote">by-path</span>”</span>):
+                file, as follows (where <em class="replaceable"><code>mode</code></em> is one of <span class="quote">â€œ<span class="quote">by-id</span>â€</span>
+                or <span class="quote">â€œ<span class="quote">by-path</span>â€</span>):
               </p>
               <pre class="userinput"><kbd class="command">sed -e 's/"write_cd_rules"/"write_cd_rules <em class="replaceable"><code>mode</code></em>"/' \
     -i /etc/udev/rules.d/83-cdrom-symlinks.rules</kbd></pre>
@@ -34760,8 +34760,8 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                 9.4.3. Dealing with Duplicate Devices
               </h3>
               <p>
-                As explained in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-udev" title="9.3. Overview of Device and Module Handling">Section&nbsp;9.3,
-                “Overview of Device and Module Handling”</a>, the
+                As explained in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-udev" title="9.3.Â Overview of Device and Module Handling">Section&nbsp;9.3,
+                â€œOverview of Device and Module Handlingâ€</a>, the
                 order in which devices with the same function appear in
                 <code class="filename">/dev</code> is essentially random.
                 E.g., if you have a USB web camera and a TV tuner, sometimes
@@ -34771,8 +34771,8 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                 For all classes of hardware except sound cards and network
                 cards, this is fixable by creating udev rules to create
                 persistent symlinks. The case of network cards is covered
-                separately in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-network" title="9.5. General Network Configuration">Section&nbsp;9.5,
-                “General Network Configuration”</a>, and sound
+                separately in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-network" title="9.5.Â General Network Configuration">Section&nbsp;9.5,
+                â€œGeneral Network Configurationâ€</a>, and sound
                 card configuration can be found in <a class="ulink" href="https://www.linuxfromscratch.org/blfs/view/11.3/postlfs/devices.html">
                 BLFS</a>.
               </p>
@@ -34825,7 +34825,7 @@ EOF</kbd></pre>
                 The files in <code class="filename">/etc/sysconfig/</code>
                 usually determine which interfaces are brought up and down by
                 the network script. This directory should contain a file for
-                each interface to be configured, such as <code class="filename">ifconfig.xyz</code>, where <span class="quote">“<span class="quote">xyz</span>”</span>
+                each interface to be configured, such as <code class="filename">ifconfig.xyz</code>, where <span class="quote">â€œ<span class="quote">xyz</span>â€</span>
                 describes the network card. The interface name (e.g. eth0) is
                 usually appropriate. Each file contains the attributes of one
                 interface, such as its IP address(es), subnet masks, and so
@@ -34848,8 +34848,8 @@ EOF</kbd></pre>
                 <p>
                   The interface names depend on the implementation and
                   configuration of the udev daemon running on the system. The
-                  udev daemon for LFS (installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-eudev" title="8.70. Eudev-3.2.11">Section&nbsp;8.70,
-                  “Eudev-3.2.11”</a>) will not run until the LFS
+                  udev daemon for LFS (installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-eudev" title="8.70.Â Eudev-3.2.11">Section&nbsp;8.70,
+                  â€œEudev-3.2.11â€</a>) will not run until the LFS
                   system is booted. So the interface names in the LFS system
                   cannot always be determined by running those commands on
                   the host distro, <span class="emphasis"><em>even in the
@@ -34877,9 +34877,9 @@ EOF</kbd></pre>
               </p>
               <p>
                 If the <code class="envar">ONBOOT</code> variable is set to
-                <span class="quote">“<span class="quote">yes</span>”</span> the System V network script
+                <span class="quote">â€œ<span class="quote">yes</span>â€</span> the System V network script
                 will bring up the Network Interface Card (NIC) during the
-                system boot process. If set to anything besides <span class="quote">“<span class="quote">yes</span>”</span>,
+                system boot process. If set to anything besides <span class="quote">â€œ<span class="quote">yes</span>â€</span>,
                 the NIC will be ignored by the network script and will not be
                 started automatically. Interfaces can be manually started or
                 stopped with the <span class="command"><strong>ifup</strong></span> and <span class="command"><strong>ifdown</strong></span> commands.
@@ -35002,7 +35002,7 @@ EOF</kbd></pre>
               <p>
                 Unless the computer is to be visible to the Internet (i.e.,
                 there is a registered domain and a valid block of assigned IP
-                addresses—most users do not have this), make sure that
+                addressesâ€”most users do not have this), make sure that
                 the IP address is in the private network IP address range.
                 Valid ranges are:
               </p>
@@ -35082,7 +35082,7 @@ EOF</kbd></pre>
                 https://www.linux.com/training-tutorials/understanding-and-using-systemd/</a>.
               </p>
               <p>
-                SysVinit (which will be referred to as <span class="quote">“<span class="quote">init</span>”</span>
+                SysVinit (which will be referred to as <span class="quote">â€œ<span class="quote">init</span>â€</span>
                 from now on) uses a run levels scheme. There are seven run
                 levels, numbered 0 to 6. (Actually, there are more run
                 levels, but the others are for special cases and are
@@ -35215,7 +35215,7 @@ EOF</kbd></pre>
                   all of them have two numbers following the initial letter.
                   The K means to stop (kill) a service and the S means to
                   start a service. The numbers determine the order in which
-                  the scripts are run, from 00 to 99—the smaller the
+                  the scripts are run, from 00 to 99â€”the smaller the
                   number, the sooner tht script runs. When <span class="command"><strong>init</strong></span> switches to another
                   run level, the appropriate services are either started or
                   stopped, depending on the run level chosen.
@@ -35324,8 +35324,8 @@ EOF</kbd></pre>
               </p>
               <p>
                 For information on kernel module loading and udev, see
-                <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#module-loading" title="9.3.2.3. Module Loading">Section&nbsp;9.3.2.3,
-                “Module Loading”</a>.
+                <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#module-loading" title="9.3.2.3.Â Module Loading">Section&nbsp;9.3.2.3,
+                â€œModule Loadingâ€</a>.
               </p>
             </div>
             <div class="sect2" lang="en">
@@ -35455,7 +35455,7 @@ EOF</kbd></pre>
                       This variable specifies the arguments for the
                       <span class="command"><strong>loadkeys</strong></span>
                       program, typically, the name of the keymap to load,
-                      e.g., <span class="quote">“<span class="quote">it</span>”</span>. If this variable is
+                      e.g., <span class="quote">â€œ<span class="quote">it</span>â€</span>. If this variable is
                       not set, the bootscript will not run the <span class="command"><strong>loadkeys</strong></span> program, and
                       the default kernel keymap will be used. Note that a few
                       keymaps have multiple versions with the same name (cz
@@ -35476,7 +35476,7 @@ EOF</kbd></pre>
                       satisfactory and a small adjustment has to be made.
                       E.g., to include the Euro sign into a keymap that
                       normally doesn't have it, set this variable to
-                      <span class="quote">“<span class="quote">euro2</span>”</span>.
+                      <span class="quote">â€œ<span class="quote">euro2</span>â€</span>.
                     </p>
                   </dd>
                   <dt>
@@ -35487,12 +35487,12 @@ EOF</kbd></pre>
                       This variable specifies the arguments for the
                       <span class="command"><strong>setfont</strong></span>
                       program. Typically, this includes the font name,
-                      <span class="quote">“<span class="quote">-m</span>”</span>, and the name of the
+                      <span class="quote">â€œ<span class="quote">-m</span>â€</span>, and the name of the
                       application character map to load. E.g., in order to
-                      load the <span class="quote">“<span class="quote">lat1-16</span>”</span> font together with
-                      the <span class="quote">“<span class="quote">8859-1</span>”</span> application
+                      load the <span class="quote">â€œ<span class="quote">lat1-16</span>â€</span> font together with
+                      the <span class="quote">â€œ<span class="quote">8859-1</span>â€</span> application
                       character map (appropriate in the USA), set this
-                      variable to <span class="quote">“<span class="quote">lat1-16 -m 8859-1</span>”</span>. In
+                      variable to <span class="quote">â€œ<span class="quote">lat1-16 -m 8859-1</span>â€</span>. In
                       UTF-8 mode, the kernel uses the application character
                       map to convert 8-bit key codes to UTF-8. Therefore the
                       argument of the "-m" parameter should be set to the
@@ -35504,7 +35504,7 @@ EOF</kbd></pre>
                   </dt>
                   <dd>
                     <p>
-                      Set this variable to <span class="quote">“<span class="quote">1</span>”</span>, <span class="quote">“<span class="quote">yes</span>”</span>, or <span class="quote">“<span class="quote">true</span>”</span> in order to put the
+                      Set this variable to <span class="quote">â€œ<span class="quote">1</span>â€</span>, <span class="quote">â€œ<span class="quote">yes</span>â€</span>, or <span class="quote">â€œ<span class="quote">true</span>â€</span> in order to put the
                       console into UTF-8 mode. This is useful in UTF-8 based
                       locales and harmful otherwise.
                     </p>
@@ -35619,8 +35619,8 @@ EOF</kbd></pre>
                       Some keymaps have dead keys (i.e., keys that don't
                       produce a character by themselves, but put an accent on
                       the character produced by the next key) or define
-                      composition rules (such as: <span class="quote">“<span class="quote">press Ctrl+. A E to
-                      get Æ</span>”</span> in the default keymap).
+                      composition rules (such as: <span class="quote">â€œ<span class="quote">press Ctrl+. A E to
+                      get Ã†</span>â€</span> in the default keymap).
                       Linux-6.1.11 interprets dead keys and composition rules
                       in the keymap correctly only when the source characters
                       to be composed together are not multibyte. This
@@ -35630,7 +35630,7 @@ EOF</kbd></pre>
                       are composed together. However, in UTF-8 mode it is a
                       problem; e.g., for the Greek language, where one
                       sometimes needs to put an accent on the letter
-                      <span class="quote">“<span class="quote">alpha</span>”</span>. The solution is
+                      <span class="quote">â€œ<span class="quote">alpha</span>â€</span>. The solution is
                       either to avoid the use of UTF-8, or to install the X
                       window system, which doesn't have this limitation, in
                       its input handling.
@@ -35930,8 +35930,8 @@ EOF</kbd></pre>
             </div>
             <p>
               The shell program <span class="command"><strong>/bin/bash</strong></span> (hereafter referred
-              to as <span class="quote">“<span class="quote">the
-              shell</span>”</span>) uses a collection of startup files
+              to as <span class="quote">â€œ<span class="quote">the
+              shell</span>â€</span>) uses a collection of startup files
               to help create the environment to run in. Each file has a
               specific use and may affect login and interactive environments
               differently. The files in the <code class="filename">/etc</code> directory provide global settings. If
@@ -36001,11 +36001,11 @@ EOF</kbd></pre>
             <p>
               Replace <em class="replaceable"><code>&lt;ll&gt;</code></em>
               below with the two-letter code for the desired language (e.g.,
-              <span class="quote">“<span class="quote">en</span>”</span>) and <em class="replaceable"><code>&lt;CC&gt;</code></em> with the two-letter
-              code for the appropriate country (e.g., <span class="quote">“<span class="quote">GB</span>”</span>).
+              <span class="quote">â€œ<span class="quote">en</span>â€</span>) and <em class="replaceable"><code>&lt;CC&gt;</code></em> with the two-letter
+              code for the appropriate country (e.g., <span class="quote">â€œ<span class="quote">GB</span>â€</span>).
               <em class="replaceable"><code>&lt;charmap&gt;</code></em>
               should be replaced with the canonical charmap for your chosen
-              locale. Optional modifiers such as <span class="quote">“<span class="quote">@euro</span>”</span>
+              locale. Optional modifiers such as <span class="quote">â€œ<span class="quote">@euro</span>â€</span>
               may also be present.
             </p>
             <p>
@@ -36014,25 +36014,25 @@ EOF</kbd></pre>
             </p>
             <pre class="userinput"><kbd class="command">locale -a</kbd></pre>
             <p>
-              Charmaps can have a number of aliases, e.g., <span class="quote">“<span class="quote">ISO-8859-1</span>”</span> is also referred to as
-              <span class="quote">“<span class="quote">iso8859-1</span>”</span> and <span class="quote">“<span class="quote">iso88591</span>”</span>. Some applications cannot
+              Charmaps can have a number of aliases, e.g., <span class="quote">â€œ<span class="quote">ISO-8859-1</span>â€</span> is also referred to as
+              <span class="quote">â€œ<span class="quote">iso8859-1</span>â€</span> and <span class="quote">â€œ<span class="quote">iso88591</span>â€</span>. Some applications cannot
               handle the various synonyms correctly (e.g., require that
-              <span class="quote">“<span class="quote">UTF-8</span>”</span> is written as <span class="quote">“<span class="quote">UTF-8</span>”</span>,
-              not <span class="quote">“<span class="quote">utf8</span>”</span>), so it is safest in most
+              <span class="quote">â€œ<span class="quote">UTF-8</span>â€</span> is written as <span class="quote">â€œ<span class="quote">UTF-8</span>â€</span>,
+              not <span class="quote">â€œ<span class="quote">utf8</span>â€</span>), so it is safest in most
               cases to choose the canonical name for a particular locale. To
               determine the canonical name, run the following command, where
               <em class="replaceable"><code>&lt;locale name&gt;</code></em>
               is the output given by <span class="command"><strong>locale
-              -a</strong></span> for your preferred locale (<span class="quote">“<span class="quote">en_GB.iso88591</span>”</span> in our example).
+              -a</strong></span> for your preferred locale (<span class="quote">â€œ<span class="quote">en_GB.iso88591</span>â€</span> in our example).
             </p>
             <pre class="userinput"><kbd class="command">LC_ALL=<em class="replaceable"><code>&lt;locale name&gt;</code></em> locale charmap</kbd></pre>
             <p>
-              For the <span class="quote">“<span class="quote">en_GB.iso88591</span>”</span> locale, the above
+              For the <span class="quote">â€œ<span class="quote">en_GB.iso88591</span>â€</span> locale, the above
               command will print:
             </p>
             <pre class="screen"><code class="computeroutput">ISO-8859-1</code></pre>
             <p>
-              This results in a final locale setting of <span class="quote">“<span class="quote">en_GB.ISO-8859-1</span>”</span>. It is important
+              This results in a final locale setting of <span class="quote">â€œ<span class="quote">en_GB.ISO-8859-1</span>â€</span>. It is important
               that the locale found using the heuristic above is tested
               before it is added to the Bash startup files:
             </p>
@@ -36046,8 +36046,8 @@ LC_ALL=&lt;locale name&gt; locale int_prefix</kbd></pre>
               the prefix to dial before the telephone number in order to get
               into the country. If any of the commands above fail with a
               message similar to the one shown below, this means that your
-              locale was either not installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-glibc" title="8.5. Glibc-2.37">Section&nbsp;8.5,
-              “Glibc-2.37”</a> or is not supported by the default
+              locale was either not installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-glibc" title="8.5.Â Glibc-2.37">Section&nbsp;8.5,
+              â€œGlibc-2.37â€</a> or is not supported by the default
               installation of Glibc.
             </p>
             <pre class="screen"><code class="computeroutput">locale: Cannot set LC_* to default locale: No such file or directory</code></pre>
@@ -36076,18 +36076,18 @@ export LANG=<em class="replaceable"><code>&lt;ll&gt;_&lt;CC&gt;.&lt;charmap&gt;&
 # End /etc/profile</code>
 EOF</kbd></pre>
             <p>
-              The <span class="quote">“<span class="quote">C</span>”</span> (default) and <span class="quote">“<span class="quote">en_US.utf8</span>”</span> (the recommended one
+              The <span class="quote">â€œ<span class="quote">C</span>â€</span> (default) and <span class="quote">â€œ<span class="quote">en_US.utf8</span>â€</span> (the recommended one
               for United States English users) locales are different.
-              <span class="quote">“<span class="quote">C</span>”</span> uses the US-ASCII 7-bit
+              <span class="quote">â€œ<span class="quote">C</span>â€</span> uses the US-ASCII 7-bit
               character set, and treats bytes with the high-order bit set
-              <span class="quote">“<span class="quote">on</span>”</span> as invalid characters. That's
+              <span class="quote">â€œ<span class="quote">on</span>â€</span> as invalid characters. That's
               why, e.g., the <span class="command"><strong>ls</strong></span>
               command displays them as question marks in that locale. Also,
               an attempt to send mail with such characters from Mutt or Pine
               results in non-RFC-conforming messages being sent (the charset
-              in the outgoing mail is indicated as <span class="quote">“<span class="quote">unknown
-              8-bit</span>”</span>). So you can only use the
-              <span class="quote">“<span class="quote">C</span>”</span> locale if you are sure you will
+              in the outgoing mail is indicated as <span class="quote">â€œ<span class="quote">unknown
+              8-bit</span>â€</span>). So you can only use the
+              <span class="quote">â€œ<span class="quote">C</span>â€</span> locale if you are sure you will
               never need 8-bit characters.
             </p>
             <p>
@@ -36304,7 +36304,7 @@ EOF</kbd></pre>
               kernel or built as a module. However, if the character set of
               the locale is UTF-8, the corresponding option <code class="option">iocharset=utf8</code> would make the file system case
               sensitive. To fix this, use the special option <code class="option">utf8</code> instead of <code class="option">iocharset=utf8</code>, for UTF-8 locales. The
-              <span class="quote">“<span class="quote">codepage</span>”</span> option is also needed for
+              <span class="quote">â€œ<span class="quote">codepage</span>â€</span> option is also needed for
               vfat and smbfs filesystems. It should be set to the codepage
               number used under MS-DOS in your country. For example, in order
               to mount USB flash drives, a ru_RU.KOI8-R user would need the
@@ -36326,11 +36326,11 @@ EOF</kbd></pre>
             <p>
               It is also possible to specify default codepage and iocharset
               values for some filesystems during kernel configuration. The
-              relevant parameters are named <span class="quote">“<span class="quote">Default NLS
-              Option</span>”</span> (<code class="option">CONFIG_NLS_DEFAULT)</code>, <span class="quote">“<span class="quote">Default Remote NLS
-              Option</span>”</span> (<code class="option">CONFIG_SMB_NLS_DEFAULT</code>), <span class="quote">“<span class="quote">Default codepage for
-              FAT</span>”</span> (<code class="option">CONFIG_FAT_DEFAULT_CODEPAGE</code>), and <span class="quote">“<span class="quote">Default iocharset for
-              FAT</span>”</span> (<code class="option">CONFIG_FAT_DEFAULT_IOCHARSET</code>). There is no way
+              relevant parameters are named <span class="quote">â€œ<span class="quote">Default NLS
+              Option</span>â€</span> (<code class="option">CONFIG_NLS_DEFAULT)</code>, <span class="quote">â€œ<span class="quote">Default Remote NLS
+              Option</span>â€</span> (<code class="option">CONFIG_SMB_NLS_DEFAULT</code>), <span class="quote">â€œ<span class="quote">Default codepage for
+              FAT</span>â€</span> (<code class="option">CONFIG_FAT_DEFAULT_CODEPAGE</code>), and <span class="quote">â€œ<span class="quote">Default iocharset for
+              FAT</span>â€</span> (<code class="option">CONFIG_FAT_DEFAULT_IOCHARSET</code>). There is no way
               to specify these settings for the ntfs filesystem at kernel
               compilation time.
             </p>
@@ -36385,7 +36385,7 @@ EOF</kbd></pre>
                 10.3.1. Installation of the kernel
               </h3>
               <p>
-                Building the kernel involves a few steps—configuration,
+                Building the kernel involves a few stepsâ€”configuration,
                 compilation, and installation. Read the <code class="filename">README</code> file in the kernel source tree for
                 alternative methods to the way this book configures the
                 kernel.
@@ -36662,8 +36662,8 @@ Device Drivers ---&gt;
               <p>
                 If using kernel modules, module configuration in <code class="filename">/etc/modprobe.d</code> may be required.
                 Information pertaining to modules and kernel configuration is
-                located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-udev" title="9.3. Overview of Device and Module Handling">Section&nbsp;9.3,
-                “Overview of Device and Module Handling”</a> and
+                located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-config-udev" title="9.3.Â Overview of Device and Module Handling">Section&nbsp;9.3,
+                â€œOverview of Device and Module Handlingâ€</a> and
                 in the kernel documentation in the <code class="filename">linux-6.1.11/Documentation</code> directory. Also,
                 <code class="filename">modprobe.d(5)</code> may be of
                 interest.
@@ -36783,8 +36783,8 @@ cp -r Documentation/* /usr/share/doc/linux-6.1.11</kbd></pre>
                 <p>
                   The headers in the system's <code class="filename">include</code> directory (<code class="filename">/usr/include</code>) should <span class="emphasis"><em>always</em></span> be the ones against which
                   Glibc was compiled, that is, the sanitised headers
-                  installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-linux-headers" title="5.4. Linux-6.1.11 API Headers">Section&nbsp;5.4,
-                  “Linux-6.1.11 API Headers”</a>. Therefore, they
+                  installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-linux-headers" title="5.4.Â Linux-6.1.11 API Headers">Section&nbsp;5.4,
+                  â€œLinux-6.1.11 API Headersâ€</a>. Therefore, they
                   should <span class="emphasis"><em>never</em></span> be
                   replaced by either the raw kernel headers or any other
                   kernel sanitized headers.
@@ -36939,7 +36939,7 @@ EOF</kbd></pre>
                 </p>
               </div>
               <p>
-                Ensure that an emergency boot disk is ready to <span class="quote">“<span class="quote">rescue</span>”</span> the computer if the
+                Ensure that an emergency boot disk is ready to <span class="quote">â€œ<span class="quote">rescue</span>â€</span> the computer if the
                 computer becomes unusable (un-bootable). If you do not
                 already have a boot device, you can create one. In order for
                 the procedure below to work, you need to jump ahead to BLFS
@@ -37029,7 +37029,7 @@ xorriso -as cdrecord -v dev=/dev/cdrw blank=as_needed grub-img.iso</kbd></pre>
                 <p>
                   If the system has been booted using UEFI, <span class="command"><strong>grub-install</strong></span> will try to
                   install files for the <span class="emphasis"><em>x86_64-efi</em></span> target, but those
-                  files have not been installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="Chapter 8. Installing Basic System Software">Chapter&nbsp;8</a>.
+                  files have not been installed in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-building-system" title="ChapterÂ 8.Â Installing Basic System Software">Chapter&nbsp;8</a>.
                   If this is the case, add <code class="option">--target
                   i386-pc</code> to the command above.
                 </p>
@@ -37077,7 +37077,7 @@ EOF</kbd></pre>
                   or removed some disks (including removable disks like USB
                   thumb devices). The change may cause boot failure because
                   <code class="filename">grub.cfg</code> refers to some
-                  <span class="quote">“<span class="quote">old</span>”</span> designators. If you wish
+                  <span class="quote">â€œ<span class="quote">old</span>â€</span> designators. If you wish
                   to avoid such a problem, you may use the UUID of a
                   partition and the UUID of a filesystem instead of a GRUB
                   designator to specify a device. Run <span class="command"><strong>lsblk -o
@@ -37368,8 +37368,8 @@ umount -v $LFS</kbd></pre>
             </p>
             <p>
               Now that the LFS system is installed, you may be wondering
-              <span class="quote">“<span class="quote">What
-              next?</span>”</span> To answer that question, we have
+              <span class="quote">â€œ<span class="quote">What
+              next?</span>â€</span> To answer that question, we have
               compiled a list of resources for you.
             </p>
             <div class="itemizedlist">
@@ -37430,7 +37430,7 @@ umount -v $LFS</kbd></pre>
                     There are several LFS mailing lists you may subscribe to
                     if you are in need of help, want to stay current with the
                     latest developments, want to contribute to the project,
-                    and more. See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-intro-maillists" title="1.4.2. Mailing Lists">Chapter&nbsp;1 -
+                    and more. See <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-intro-maillists" title="1.4.2.Â Mailing Lists">Chapter&nbsp;1 -
                     Mailing Lists</a> for more information.
                   </p>
                 </li>
@@ -38643,41 +38643,41 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:gerard@linuxfromscratch.org">Gerard Beekmans</a>
-                  &lt;gerard AT linuxfromscratch D0T org&gt; – LFS Creator
+                  &lt;gerard AT linuxfromscratch D0T org&gt; â€“ LFS Creator
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:bdubbs@linuxfromscratch.org">Bruce Dubbs</a>
-                  &lt;bdubbs AT linuxfromscratch D0T org&gt; – LFS Managing
+                  &lt;bdubbs AT linuxfromscratch D0T org&gt; â€“ LFS Managing
                   Editor
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jim@linuxfromscratch.org">Jim
-                  Gifford</a> &lt;jim AT linuxfromscratch D0T org&gt; – CLFS
+                  Gifford</a> &lt;jim AT linuxfromscratch D0T org&gt; â€“ CLFS
                   Project Co-Leader
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:pierre@linuxfromscratch.org">Pierre Labastie</a>
-                  &lt;pierre AT linuxfromscratch D0T org&gt; – BLFS Editor and
+                  &lt;pierre AT linuxfromscratch D0T org&gt; â€“ BLFS Editor and
                   ALFS Lead
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:dj@linuxfromscratch.org">DJ
-                  Lucas</a> &lt;dj AT linuxfromscratch D0T org&gt; – LFS and
+                  Lucas</a> &lt;dj AT linuxfromscratch D0T org&gt; â€“ LFS and
                   BLFS Editor
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:ken@linuxfromscratch.org">Ken
-                  Moffat</a> &lt;ken AT linuxfromscratch D0T org&gt; – BLFS
+                  Moffat</a> &lt;ken AT linuxfromscratch D0T org&gt; â€“ BLFS
                   Editor
                 </p>
               </li>
@@ -38700,42 +38700,42 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:macana@macana-es.com">Manuel
-                  Canales Esparcia</a> &lt;macana AT macana-es D0T com&gt; –
+                  Canales Esparcia</a> &lt;macana AT macana-es D0T com&gt; â€“
                   Spanish LFS translation project
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:johan@linuxfromscratch.org">Johan Lenglet</a>
-                  &lt;johan AT linuxfromscratch D0T org&gt; – French LFS
+                  &lt;johan AT linuxfromscratch D0T org&gt; â€“ French LFS
                   translation project until 2008
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jmengual@linuxfromscratch.org">Jean-Philippe
-                  Mengual</a> &lt;jmengual AT linuxfromscratch D0T org&gt; –
+                  Mengual</a> &lt;jmengual AT linuxfromscratch D0T org&gt; â€“
                   French LFS translation project 2008-2016
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jlepiller@linuxfromscratch.org">Julien Lepiller</a>
-                  &lt;jlepiller AT linuxfromscratch D0T org&gt; – French LFS
+                  &lt;jlepiller AT linuxfromscratch D0T org&gt; â€“ French LFS
                   translation project 2017-present
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:lizardo@linuxfromscratch.org">Anderson Lizardo</a>
-                  &lt;lizardo AT linuxfromscratch D0T org&gt; – Portuguese LFS
+                  &lt;lizardo AT linuxfromscratch D0T org&gt; â€“ Portuguese LFS
                   translation project
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:tr@erdfunkstelle.de">Thomas
-                  Reitelbach</a> &lt;tr AT erdfunkstelle D0T de&gt; – German
+                  Reitelbach</a> &lt;tr AT erdfunkstelle D0T de&gt; â€“ German
                   LFS translation project
                 </p>
               </li>
@@ -38752,28 +38752,28 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:scott@osuosl.org">Scott
-                  Kveton</a> &lt;scott AT osuosl D0T org&gt; –
+                  Kveton</a> &lt;scott AT osuosl D0T org&gt; â€“
                   lfs.oregonstate.edu mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:lost@l-w.net">William
-                  Astle</a> &lt;lost AT l-w D0T net&gt; –
+                  Astle</a> &lt;lost AT l-w D0T net&gt; â€“
                   ca.linuxfromscratch.org mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:eujon.sellers@gmail.com">Eujon Sellers</a>
-                  &lt;jpolen@rackspace.com&gt; – lfs.introspeed.com
+                  &lt;jpolen@rackspace.com&gt; â€“ lfs.introspeed.com
                   mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:justin@knierim.org">Justin
-                  Knierim</a> &lt;tim@idge.net&gt; – lfs-matrix.net
+                  Knierim</a> &lt;tim@idge.net&gt; â€“ lfs-matrix.net
                   mirror
                 </p>
               </li>
@@ -38787,14 +38787,14 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:manuel@linuxfromscratch.org">Manuel Canales
-                  Esparcia</a> &lt;manuel AT linuxfromscratch D0T org&gt; –
+                  Esparcia</a> &lt;manuel AT linuxfromscratch D0T org&gt; â€“
                   lfsmirror.lfs-es.info mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:lfalcon@thymbra.com">Luis
-                  Falcon</a> &lt;Luis Falcon&gt; – torredehanoi.org
+                  Falcon</a> &lt;Luis Falcon&gt; â€“ torredehanoi.org
                   mirror
                 </p>
               </li>
@@ -38808,95 +38808,95 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:guido@primerelay.net">Guido
-                  Passet</a> &lt;guido AT primerelay D0T net&gt; –
+                  Passet</a> &lt;guido AT primerelay D0T net&gt; â€“
                   nl.linuxfromscratch.org mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:baafie@planet.nl">Bastiaan
-                  Jacques</a> &lt;baafie AT planet D0T nl&gt; –
+                  Jacques</a> &lt;baafie AT planet D0T nl&gt; â€“
                   lfs.pagefault.net mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:sven.cranshoff@lineo.be">Sven
-                  Cranshoff</a> &lt;sven D0T cranshoff AT lineo D0T be&gt; –
+                  Cranshoff</a> &lt;sven D0T cranshoff AT lineo D0T be&gt; â€“
                   lfs.lineo.be mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Scarlet Belgium – lfs.scarlet.be mirror
+                  Scarlet Belgium â€“ lfs.scarlet.be mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:info@aliensoft.org">Sebastian
-                  Faulborn</a> &lt;info AT aliensoft D0T org&gt; –
+                  Faulborn</a> &lt;info AT aliensoft D0T org&gt; â€“
                   lfs.aliensoft.org mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:stuart@dontuse.ms">Stuart
-                  Fox</a> &lt;stuart AT dontuse D0T ms&gt; – lfs.dontuse.ms
+                  Fox</a> &lt;stuart AT dontuse D0T ms&gt; â€“ lfs.dontuse.ms
                   mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:admin@realhost.de">Ralf
-                  Uhlemann</a> &lt;admin AT realhost D0T de&gt; –
+                  Uhlemann</a> &lt;admin AT realhost D0T de&gt; â€“
                   lfs.oss-mirror.org mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:Antonin.Sprinzl@tuwien.ac.at">Antonin Sprinzl</a>
-                  &lt;Antonin D0T Sprinzl AT tuwien D0T ac D0T at&gt; –
+                  &lt;Antonin D0T Sprinzl AT tuwien D0T ac D0T at&gt; â€“
                   at.linuxfromscratch.org mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:fredan-lfs@fredan.org">Fredrik Danerklint</a>
-                  &lt;fredan-lfs AT fredan D0T org&gt; –
+                  &lt;fredan-lfs AT fredan D0T org&gt; â€“
                   se.linuxfromscratch.org mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:franck@linuxpourtous.com">Franck</a>
-                  &lt;franck AT linuxpourtous D0T com&gt; –
+                  &lt;franck AT linuxpourtous D0T com&gt; â€“
                   lfs.linuxpourtous.com mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:baque@cict.fr">Philippe
-                  Baque</a> &lt;baque AT cict D0T fr&gt; – lfs.cict.fr mirror
+                  Baque</a> &lt;baque AT cict D0T fr&gt; â€“ lfs.cict.fr mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:gyouja@pilgrims.ru">Vitaly
-                  Chekasin</a> &lt;gyouja AT pilgrims D0T ru&gt; –
+                  Chekasin</a> &lt;gyouja AT pilgrims D0T ru&gt; â€“
                   lfs.pilgrims.ru mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:kontakt@wankoo.org">Benjamin
-                  Heil</a> &lt;kontakt AT wankoo D0T org&gt; – lfs.wankoo.org
+                  Heil</a> &lt;kontakt AT wankoo D0T org&gt; â€“ lfs.wankoo.org
                   mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:info@linuxfromscratch.org.ru">Anton Maisak</a>
-                  &lt;info AT linuxfromscratch D0T org D0T ru&gt; –
+                  &lt;info AT linuxfromscratch D0T org D0T ru&gt; â€“
                   linuxfromscratch.org.ru mirror
                 </p>
               </li>
@@ -38910,14 +38910,14 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:satit@wbac.ac.th">Satit
-                  Phermsawang</a> &lt;satit AT wbac D0T ac D0T th&gt; –
+                  Phermsawang</a> &lt;satit AT wbac D0T ac D0T th&gt; â€“
                   lfs.phayoune.org mirror
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:info@shizu-net.jp">Shizunet
-                  Co.,Ltd.</a> &lt;info AT shizu-net D0T jp&gt; –
+                  Co.,Ltd.</a> &lt;info AT shizu-net D0T jp&gt; â€“
                   lfs.mirror.shizu-net.jp mirror
                 </p>
               </li>
@@ -38931,7 +38931,7 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jason@dstc.edu.au">Jason
-                  Andrade</a> &lt;jason AT dstc D0T edu D0T au&gt; –
+                  Andrade</a> &lt;jason AT dstc D0T edu D0T au&gt; â€“
                   au.linuxfromscratch.org mirror
                 </p>
               </li>
@@ -38946,12 +38946,12 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
                 <p>
                   <a class="ulink" href="mailto:theladyskye@linuxfromscratch.org">Christine
                   Barczak</a> &lt;theladyskye AT linuxfromscratch D0T org&gt;
-                  – LFS Book Editor
+                  â€“ LFS Book Editor
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Archaic &lt;archaic@linuxfromscratch.org&gt; – LFS
+                  Archaic &lt;archaic@linuxfromscratch.org&gt; â€“ LFS
                   Technical Writer/Editor, HLFS Project Leader, BLFS Editor,
                   Hints and Patches Project Maintainer
                 </p>
@@ -38959,14 +38959,14 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:matthew@linuxfromscratch.org">Matthew Burgess</a>
-                  &lt;matthew AT linuxfromscratch D0T org&gt; – LFS Project
+                  &lt;matthew AT linuxfromscratch D0T org&gt; â€“ LFS Project
                   Leader, LFS Technical Writer/Editor
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:nathan@linuxfromscratch.org">Nathan Coulson</a>
-                  &lt;nathan AT linuxfromscratch D0T org&gt; – LFS-Bootscripts
+                  &lt;nathan AT linuxfromscratch D0T org&gt; â€“ LFS-Bootscripts
                   Maintainer
                 </p>
               </li>
@@ -38988,20 +38988,20 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jeroen@linuxfromscratch.org">Jeroen Coumans</a>
-                  &lt;jeroen AT linuxfromscratch D0T org&gt; – Website
+                  &lt;jeroen AT linuxfromscratch D0T org&gt; â€“ Website
                   Developer, FAQ Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:manuel@linuxfromscratch.org">Manuel Canales
-                  Esparcia</a> &lt;manuel AT linuxfromscratch D0T org&gt; –
+                  Esparcia</a> &lt;manuel AT linuxfromscratch D0T org&gt; â€“
                   LFS/BLFS/HLFS XML and XSL Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Alex Groenewoud – LFS Technical Writer
+                  Alex Groenewoud â€“ LFS Technical Writer
                 </p>
               </li>
               <li class="listitem">
@@ -39012,14 +39012,14 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jhuntwork@linuxfromscratch.org">Jeremy Huntwork</a>
-                  &lt;jhuntwork AT linuxfromscratch D0T org&gt; – LFS
+                  &lt;jhuntwork AT linuxfromscratch D0T org&gt; â€“ LFS
                   Technical Writer, LFS LiveCD Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:bryan@linuxfromscratch.org">Bryan Kadzban</a>
-                  &lt;bryan AT linuxfromscratch D0T org&gt; – LFS Technical
+                  &lt;bryan AT linuxfromscratch D0T org&gt; â€“ LFS Technical
                   Writer
                 </p>
               </li>
@@ -39030,41 +39030,41 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               </li>
               <li class="listitem">
                 <p>
-                  Seth W. Klein – FAQ maintainer
+                  Seth W. Klein â€“ FAQ maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:nicholas@linuxfromscratch.org">Nicholas Leippe</a>
-                  &lt;nicholas AT linuxfromscratch D0T org&gt; – Wiki
+                  &lt;nicholas AT linuxfromscratch D0T org&gt; â€“ Wiki
                   Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:lizardo@linuxfromscratch.org">Anderson Lizardo</a>
-                  &lt;lizardo AT linuxfromscratch D0T org&gt; – Website
+                  &lt;lizardo AT linuxfromscratch D0T org&gt; â€“ Website
                   Backend-Scripts Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:randy@linuxfromscratch.org">Randy McMurchy</a>
-                  &lt;randy AT linuxfromscratch D0T org&gt; – BLFS Project
+                  &lt;randy AT linuxfromscratch D0T org&gt; â€“ BLFS Project
                   Leader, LFS Editor
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:dnicholson@linuxfromscratch.org">Dan Nicholson</a>
-                  &lt;dnicholson AT linuxfromscratch D0T org&gt; – LFS and
+                  &lt;dnicholson AT linuxfromscratch D0T org&gt; â€“ LFS and
                   BLFS Editor
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:alexander@linuxfromscratch.org">Alexander E.
-                  Patrakov</a> &lt;alexander AT linuxfromscratch D0T org&gt; –
+                  Patrakov</a> &lt;alexander AT linuxfromscratch D0T org&gt; â€“
                   LFS Technical Writer, LFS Internationalization Editor, LFS
                   Live CD Maintainer
                 </p>
@@ -39077,61 +39077,61 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash --login'</strong></span></pre>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:scot@linuxfromscratch.org">Scot Mc Pherson</a>
-                  &lt;scot AT linuxfromscratch D0T org&gt; – LFS NNTP Gateway
+                  &lt;scot AT linuxfromscratch D0T org&gt; â€“ LFS NNTP Gateway
                   Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</a>
-                  &lt;renodr AT linuxfromscratch D0T org&gt; – Systemd Editor
+                  &lt;renodr AT linuxfromscratch D0T org&gt; â€“ Systemd Editor
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:ryan@linuxfromscratch.org">Ryan Oliver</a>
-                  &lt;ryan AT linuxfromscratch D0T org&gt; – CLFS Project
+                  &lt;ryan AT linuxfromscratch D0T org&gt; â€“ CLFS Project
                   Co-Leader
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:gschafer@zip.com.au">Greg
-                  Schafer</a> &lt;gschafer AT zip D0T com D0T au&gt; – LFS
+                  Schafer</a> &lt;gschafer AT zip D0T com D0T au&gt; â€“ LFS
                   Technical Writer and Architect of the Next Generation
                   64-bit-enabling Build Method
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Jesse Tie-Ten-Quee – LFS Technical Writer
+                  Jesse Tie-Ten-Quee â€“ LFS Technical Writer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jwrober@linuxfromscratch.org">James Robertson</a>
-                  &lt;jwrober AT linuxfromscratch D0T org&gt; – Bugzilla
+                  &lt;jwrober AT linuxfromscratch D0T org&gt; â€“ Bugzilla
                   Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:tushar@linuxfromscratch.org">Tushar Teredesai</a>
-                  &lt;tushar AT linuxfromscratch D0T org&gt; – BLFS Book
+                  &lt;tushar AT linuxfromscratch D0T org&gt; â€“ BLFS Book
                   Editor, Hints and Patches Project Leader
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:jeremy@linuxfromscratch.org">Jeremy Utley</a>
-                  &lt;jeremy AT linuxfromscratch D0T org&gt; – LFS Technical
+                  &lt;jeremy AT linuxfromscratch D0T org&gt; â€“ LFS Technical
                   Writer, Bugzilla Maintainer, LFS-Bootscripts Maintainer
                 </p>
               </li>
               <li class="listitem">
                 <p>
                   <a class="ulink" href="mailto:zwinkles@gmail.com">Zack
-                  Winkles</a> &lt;zwinkles AT gmail D0T com&gt; – LFS
+                  Winkles</a> &lt;zwinkles AT gmail D0T com&gt; â€“ LFS
                   Technical Writer
                 </p>
               </li>
@@ -46304,8 +46304,8 @@ esac
           </div>
           <p>
             The rules in this appendix are listed for convenience.
-            Installation is normally done via instructions in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-eudev" title="8.70. Eudev-3.2.11">Section&nbsp;8.70,
-            “Eudev-3.2.11”</a>.
+            Installation is normally done via instructions in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-system-eudev" title="8.70.Â Eudev-3.2.11">Section&nbsp;8.70,
+            â€œEudev-3.2.11â€</a>.
           </p>
           <div class="wrap" lang="en">
             <div class="titlepage">
@@ -46899,7 +46899,7 @@ KERNEL=="dcbri[0-9]*",      GROUP="dialout"
               </div>
             </div>
             <p>
-              Copyright © 1999-2023 Gerard Beekmans
+              Copyright Â© 1999-2023 Gerard Beekmans
             </p>
             <p>
               Permission is hereby granted, free of charge, to any person
