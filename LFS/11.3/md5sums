@@ -38,11 +38,9 @@ f3ff4461e25dbc5ef1fb7a9167a9523d  iproute2-6.1.0.tar.xz
 85202f0740a75eb52f2163c776f9b564  kmod-30.tar.xz
 1cdec714569d830a68f4cff11203cdba  less-608.tar.gz
 569217b0b56f98fd267d38d72ee20132  lfs-bootscripts-20230101.tar.xz
-06333f4301657298890fd8d6f1fb4793  libcap-2.67.tar.xz
 0da1a5ed7786ac12dcbaf0d499d8a049  libffi-3.4.4.tar.gz
 1a48b5771b9f6c790fb4efdb1ac71342  libpipeline-1.5.7.tar.gz
 2fc0b6ddcd66a89ed6e45db28fa44232  libtool-2.4.7.tar.xz
-f91621912cd58ac6d4128d4057980e7d  linux-6.1.11.tar.xz
 0d90823e1426f1da2fd872df0311298d  m4-1.4.19.tar.xz
 d7575a26a94ee8427130e9db23cdaa78  make-4.4.tar.gz
 a7d59fb2df6158c44f8f7009dcc6d875  man-db-2.11.2.tar.xz
@@ -52,7 +50,6 @@ c62b7c944bb0887a35edab7cab301357  man-pages-6.03.tar.xz
 a25091f337f25830c16d2054d74b5af7  mpfr-4.2.0.tar.xz
 5a62487b5d4ac6b132fe2bf9f8fad29b  ncurses-6.4.tar.gz
 32151c08211d7ca3c1d832064f6939b0  ninja-1.11.1.tar.gz
-61e017cf4fea1b599048f621f1490fbd  openssl-3.0.8.tar.gz
 78ad9937e4caadcba1526ef1853730d5  patch-2.7.6.tar.xz
 826e42da130011699172fd655e49cfa2  perl-5.36.0.tar.xz
 f6e931e319531b736fadc017f470e68a  pkg-config-0.29.2.tar.gz
