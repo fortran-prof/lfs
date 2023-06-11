@@ -7227,6 +7227,9 @@ esac</kbd></pre>
               with this command:
             </p>
             <pre class="userinput"><kbd class="command">mkdir -pv $LFS/tools</kbd></pre>
+			<p>
+			  <b>[PROF.FORTRAN: mkdir и ln это все части coreutils. А for и case - части bash]</b>
+			</p>
             <div class="admon note">
               <h3>
                 Note
@@ -7333,6 +7336,7 @@ useradd -s /bin/bash -g lfs -m -k /dev/null lfs</kbd></pre>
             </p>
             <pre class="userinput"><kbd class="command">passwd lfs</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: groupadd, useradd и passwd это все части не пойми чего, видимо ядра линукс]</b>
               Grant <code class="systemitem">lfs</code> full access to all
               the directories under <code class="filename">$LFS</code> by
               making <code class="systemitem">lfs</code> the owner:
@@ -7360,11 +7364,13 @@ esac</kbd></pre>
             </p>
             <pre class="userinput"><kbd class="command">su - lfs</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: su является частью util-linux]</b>
               The <span class="quote">“<span class="quote"><em class="parameter"><code>-</code></em></span>”</span> instructs
               <span class="command"><strong>su</strong></span> to start a
               login shell as opposed to a non-login shell. The difference
               between these two types of shells is described in detail in
               <code class="filename">bash(1)</code> and <span class="command"><strong>info bash</strong></span>.
+			  <b>[PROF.FORTRAN: login shell - сбрасывает текущий каталог на ~ и сбрасывает переменные окружения, а non-login shell оставляет текущие каталог и переменные окружения такими же, какими они были до вызова su]</b>
             </p>
           </div>
           <div class="sect1" lang="en">
@@ -7388,6 +7394,7 @@ esac</kbd></pre>
 <code class="literal">exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash</code>
 EOF</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: cat и env являются частью coreutils, а exec является частью bash]</b>
               When logged on as user <code class="systemitem">lfs</code>, or
               when switched to the <code class="systemitem">lfs</code> user
               using an <span class="command"><strong>su</strong></span>
@@ -7423,6 +7430,9 @@ PATH=$LFS/tools/bin:$PATH
 CONFIG_SITE=$LFS/usr/share/config.site
 export LFS LC_ALL LFS_TGT PATH CONFIG_SITE</code>
 EOF</kbd></pre>
+            <p>
+			  <b>[PROF.FORTRAN: uname является частью coreutils, все остальное - часть bash]</b>
+			</p>
             <div class="variablelist">
               <p class="title">
                 <strong>The meaning of the settings in <code class="filename">.bashrc</code></strong>
@@ -7584,6 +7594,7 @@ EOF</kbd></pre>
               </p>
               <pre class="userinput"><kbd class="command">[ ! -e /etc/bash.bashrc ] || mv -v /etc/bash.bashrc /etc/bash.bashrc.NOUSE</kbd></pre>
               <p>
+			    <b>[PROF.FORTRAN: в моем случае этот файл и правда был (p.s. дистрибутив Kali Linux). Пришлось выйти из пользователя lfs и через sudo сделать mv (часть coreutils)]</b>
                 When the <code class="systemitem">lfs</code> user is no
                 longer needed (at the beginning of <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#chapter-chroot-temporary-tools" title="Chapter 7. Entering Chroot and Building Additional Temporary Tools">
                 Chapter&nbsp;7</a>), you may safely restore <code class="filename">/etc/bash.bashrc</code> (if desired).
@@ -7601,6 +7612,9 @@ EOF</kbd></pre>
               user profile:
             </p>
             <pre class="userinput"><kbd class="command">source ~/.bash_profile</kbd></pre>
+			<p>
+			  <b>[PROF.FORTRAN: source это часть bash]</b>
+			</p>
           </div>
           <div class="sect1" lang="en">
             <div class="titlepage">
@@ -7677,6 +7691,9 @@ EOF</kbd></pre>
                 the regression tests for the package unless specified
                 otherwise.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: я так и не понял, лучше поставить переменную MAKEFLAGS, или лучше не ставить. У меня как раз есть 4 ядра]</b>
+			  </p>
             </div>
           </div>
           <div class="sect1" lang="en">
