@@ -8127,6 +8127,7 @@ EOF</kbd></pre>
                   system it will be <span class="emphasis"><em>x86_64-pc-linux-gnu</em></span>. On most
                   Linux systems the even simpler <span class="command"><strong>gcc -dumpmachine</strong></span> command
                   will give you similar information.
+				  <b>[PROF.FORTRAN: разница в выводах есть: gcc -dumpmachine выводит x86_64-linux-gnu, а config.guess в binutils - x86_64-pc-linux-gnu]</b>
                 </p>
                 <p>
                   You should also be aware of the name of the platform's
@@ -8704,6 +8705,9 @@ checking what linker to use... /mnt/lfs/tools/i686-lfs-linux-gnu/bin/ld</code></
                   can save you a lot of problems later.
                 </p>
               </div>
+			  <p>
+			    <b>[PROF.FORTRAN: выше забыли упомянуть, что в хостовой системе должен быть установлен tar]</b>
+			  </p>
               <p>
                 It is important that Binutils be the first package compiled
                 because both Glibc and GCC perform various tests on the
@@ -8730,6 +8734,9 @@ cd       build</kbd></pre>
                   ../configure ... &amp;&amp; make &amp;&amp; make install;
                   }</code></strong>.
                 </p>
+				<p>
+				  <b>[PROF.FORTRAN: time это часть bash. Выше фигурные скобки не нужны, с ними не работает. Нужно просто написать time перед командой]</b>
+				</p>
               </div>
               <p>
                 Now prepare Binutils for compilation:
