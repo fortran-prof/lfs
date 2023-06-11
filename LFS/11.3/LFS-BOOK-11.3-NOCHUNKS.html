@@ -5728,15 +5728,17 @@ mount -v -t ext4 /dev/<em class="replaceable"><code>&lt;yyy&gt;</code></em> $LFS
             </p>
             <pre class="userinput"><kbd class="command">wget --input-file=wget-list-sysv --continue --directory-prefix=$LFS/sources</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: выше забыли упомянуть, что в системе должен быть установлен wget]</b>
               Additionally, starting with LFS-7.0, there is a separate file,
               <a class="ulink" href="https://www.linuxfromscratch.org/lfs/downloads/stable/md5sums">md5sums</a>, which can be
               used to verify that all the correct packages are available
               before proceeding. Place that file in <code class="filename">$LFS/sources</code> and run:
             </p>
             <pre class="userinput"><kbd class="command">pushd $LFS/sources
-  md5sum -c md5sums
+md5sum -c md5sums
 popd</kbd></pre>
             <p>
+			  <b>[PROF.FORTRAN: md5sum это часть coreutils, а pushd и popd это часть bash]</b>
               This check can be used after retrieving the needed files with
               any of the methods listed above.
             </p>
@@ -5752,6 +5754,9 @@ popd</kbd></pre>
               issue:
             </p>
             <pre class="userinput"><kbd class="command">chown root:root $LFS/sources/*</kbd></pre>
+			<p>
+			  <b>[PROF.FORTRAN: chown это часть coreutils. У меня атрибуты файлов после этой команды не поменялись, поэтому не понимаю её необходимость]</b>
+			</p>
           </div>
           <div class="sect1" lang="en">
             <div class="titlepage">
