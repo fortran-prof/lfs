@@ -7672,7 +7672,7 @@ EOF</kbd></pre>
               </p>
               <pre class="userinput"><kbd class="command">export MAKEFLAGS='-j4'</kbd></pre>
               <p>
-                or by building with:
+			    or by building with:
               </p>
               <pre class="userinput"><kbd class="command">make -j4</kbd></pre>
               <p>
@@ -7693,6 +7693,8 @@ EOF</kbd></pre>
               </p>
 			  <p>
 			    <b>[PROF.FORTRAN: я так и не понял, лучше поставить переменную MAKEFLAGS, или лучше не ставить. У меня как раз есть 4 ядра]</b>
+				<br>
+				<b>[PROF.FORTRAN: похоже, что я зря не понял намека, что надо все-таки эту переменную в .bashrc добавить. Потому что сборка GCC Pass 1 у меня уже идет несколько часов (точно больше 4.5 часов, а потом я пошел спать :) ), хотя по оценкам 3.3 SBU, она должна была закончиться за 33 минуты]</b>
 			  </p>
             </div>
           </div>
@@ -8706,9 +8708,6 @@ checking what linker to use... /mnt/lfs/tools/i686-lfs-linux-gnu/bin/ld</code></
                 </p>
               </div>
 			  <p>
-			    <b>[PROF.FORTRAN: выше забыли упомянуть, что в хостовой системе должен быть установлен tar]</b>
-			  </p>
-              <p>
                 It is important that Binutils be the first package compiled
                 because both Glibc and GCC perform various tests on the
                 available linker and assembler to determine which of their
@@ -9067,6 +9066,11 @@ cd       build</kbd></pre>
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
   `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/install-tools/include/limits.h</kbd></pre>
             </div>
+			<p>
+			  <b>[PROF.FORTRAN: команда gcc -print-libgcc-file-name отдает полное имя файла libgcc.a, который в данном случае расположен в папке /mnt/lfs/tools/lib/gcc/x86_64-lfs-linux-gnu/12.2.0/. Сразу после выполнения make install описываеый файл limits.h содержит только то, что находится в файле gcc/glimits.h. По какой-то причине в LFS туда руками еще добавляется контент файлов: gcc/limitx.h и gcc/limity.h]</b>
+			  <br>
+			  <b>[PROF.FORTRAN: сборка GCC показала, что зря я пренебрег намеком, что нужно в файл .bashrc добавить переменную MAKEFLAGS='-j4'. С этого момента исправлено.]</b>
+			</p>
             <div class="content" lang="en">
               <p>
                 Details on this package are located in <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#contents-gcc" title="8.26.2. Contents of GCC">Section&nbsp;8.26.2,
@@ -9081,11 +9085,14 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
                   <h2 class="title">
                     <a id="ch-tools-linux-headers"></a>5.4.&nbsp;Linux-6.1.11
                     API Headers
-                  </h2>
+                  </h2>				  
                 </div>
               </div>
             </div>
             <div class="package" lang="en">
+			  <p>
+				<b>[PROF.FORTRAN: из-за багов версия была заменена на 6.1.22]</b>
+			  </p>
               <p>
                 The Linux API Headers (in linux-6.1.11.tar.xz) expose the
                 kernel's API for use by Glibc.
@@ -9128,6 +9135,11 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
               <pre class="userinput"><kbd class="command">make headers
 find usr/include -type f ! -name '*.h' -delete
 </kbd><kbd class="command">cp -rv usr/include $LFS/usr</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: после этого в /usr/include нашего будущего chroot-а появятся все хедеры нашего будущего ядра линукс]</b>
+				<br>
+				<b>[PROF.FORTRAN: надо оставить еще одну ремарку по поводу медленной сборки. Похоже я сделал большую глупость. Я разместил папку с исходниками LFS на пошаренной между виртуалкой с Kali Linux и хостом с Windows папке. В силу того, что любые распаковки архивов в этой папке, любые сборки в этой папке ведут к появлению в ней большого количества новых файлов, которые могут заинтересовать антивирус, рискну предположить, что медлительность была связана именно с этим. Как только я перенес исходники LFS внуть Kali Linux подальше от глаз антивируса, так скорость сразу увеличилась. Кроме того, хранение исходников LFS на шаре с Windows приводит к тому, что не все тарболы удается распаковать. Например, не удается распаковать тарболы, которые содержат символьные ссылки формата линукса]</b>
+			  </p>
             </div>
             <div class="content" lang="en">
               <h3 class="sect2">
@@ -9350,6 +9362,9 @@ find usr/include -type f ! -name '*.h' -delete
             ln -sfv ../lib/ld-linux-x86-64.so.2 $LFS/lib64/ld-lsb-x86-64.so.3
     ;;
 esac</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: команды выше (я рассматриваю вариант x86_64) создает две битые ссылки $LFS/lib64/ld-linux-x86-64.so.2 и $LFS/lib64/ld-lsb-x86-64.so.3, которые обе ведут на файл, которого еще нет $LFS/lib/ld-linux-x86-64.so.2 (он же $LFS/usr/lib/ld-linux-x86-64.so.2). Для того, чтобы создать именно битые ссылки и был использовал force ключик -f команды ln. Для чего на данном этапе создавать битые ссылки и почему бы не долждаться появления файла, на который эти ссылки должны вести, мне пока не понятно. Ссылки перестанут быть битыми сразу после выполнения make install для glibc чуть ниже]</b>
+			  </p>
               <div class="admon note">
                 <h3>
                   Note
@@ -9439,6 +9454,9 @@ cd       build</kbd></pre>
                   </dd>
                 </dl>
               </div>
+			  <p>
+			    <b>[PROF.FORTRAN: пока не понимаю, почему glibc будет ставиться в хост систему в ее папки /usr и /usr/lib]</b>
+			  </p>
               <p>
                 During this stage the following warning might appear:
               </p>
@@ -9471,6 +9489,9 @@ cd       build</kbd></pre>
                 Compile the package:
               </p>
               <pre class="userinput"><kbd class="command">make</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: я собрал на 4 ядрах и вроде успешно]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
@@ -9517,6 +9538,9 @@ cd       build</kbd></pre>
                 <span class="command"><strong>ldd</strong></span> script:
               </p>
               <pre class="userinput"><kbd class="command">sed '/RTLDLIST=/s@/usr@@g' -i $LFS/usr/bin/ldd</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: эта команда заменяет строку  'RTLDLIST="/usr/lib/ld-linux.so.2 /usr/lib64/ld-linux-x86-64.so.2 /usr/libx32/ld-linux-x32.so.2"' на строку 'RTLDLIST="/lib/ld-linux.so.2 /lib64/ld-linux-x86-64.so.2 /libx32/ld-linux-x32.so.2"', т.е. удаляется префикс-папка /usr]</b>
+			  </p>
               <div class="admon caution">
                 <h3>
                   Caution
@@ -9529,6 +9553,9 @@ cd       build</kbd></pre>
                 </p>
                 <pre class="userinput"><kbd class="command">echo 'int main(){}' | $LFS_TGT-gcc -xc -
 readelf -l a.out | grep ld-linux</kbd></pre>
+			    <p>
+			      <b>[PROF.FORTRAN: лучше grep interpreter]</b>
+			    </p>
                 <p>
                   If everything is working correctly, there should be no
                   errors, and the output of the last command will be of the
@@ -9539,6 +9566,9 @@ readelf -l a.out | grep ld-linux</kbd></pre>
                   Note that for 32-bit machines, the interpreter name will be
                   <code class="filename">/lib/ld-linux.so.2</code>.
                 </p>
+			    <p>
+			      <b>[PROF.FORTRAN: то есть вывод соответствует одному из пути в переменной RTLDLIST определенной выше в файле ldd (/lib/ld-linux.so.2 или /lib64/ld-linux-x86-64.so.2)]</b>
+			    </p>
                 <p>
                   If the output is not as shown above, or there is no output
                   at all, then something is wrong. Investigate and retrace
@@ -9569,6 +9599,9 @@ readelf -l a.out | grep ld-linux</kbd></pre>
                 utility provided by the GCC developers:
               </p>
               <pre class="userinput"><kbd class="command">$LFS/tools/libexec/gcc/$LFS_TGT/12.2.0/install-tools/mkheaders</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: я ожидал, что эта команда из папки /mnt/lfs/tools/libexec/gcc/x86_64-lfs-linux-gnu/12.2.0/install-tools/ изменит контект файла limits.h в папке /mnt/lfs/tools/lib/gcc/x86_64-lfs-linux-gnu/12.2.0/install-tools/include/, но если он и изменился, то не существенно. Визуально, я разницы не заметил]</b>
+			  </p>
             </div>
             <div class="content" lang="en">
               <p>
@@ -36824,7 +36857,7 @@ cp -r Documentation/* /usr/share/doc/linux-6.1.11</kbd></pre>
                   should <span class="emphasis"><em>never</em></span> be
                   replaced by either the raw kernel headers or any other
                   kernel sanitized headers.
-                </p>
+                </p>				
               </div>
             </div>
             <div class="configuration" lang="en">
