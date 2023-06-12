@@ -9455,7 +9455,7 @@ cd       build</kbd></pre>
                 </dl>
               </div>
 			  <p>
-			    <b>[PROF.FORTRAN: пока не понимаю, почему glibc будет ставиться в хост систему в ее папки /usr и /usr/lib]</b>
+			    <b>[PROF.FORTRAN: пока не понимаю, почему glibc будет ставиться в хост систему в ее папки /usr и /usr/lib. Может это потому что ниже при запуске make install будет передаваться параметр DESTDIR=$LFS и он как бы добавится в начало эти путей?]</b>
 			  </p>
               <p>
                 During this stage the following warning might appear:
@@ -9721,6 +9721,9 @@ cd       build</kbd></pre>
                   </dd>
                 </dl>
               </div>
+			  <p>
+			    <b>[PROF.FORTRAN: тут наконец-то дали ответ на вопрос, почему в скрипте configure используются пути /usr и /tools/... без префикса $LFS. Префикс $LFS действительно будет подставлен в команде make install через параметр DESTDIR]</b>
+			  </p>
               <p>
                 Compile Libstdc++ by running:
               </p>
@@ -9875,16 +9878,22 @@ cd       build</kbd></pre>
                 configuration:
               </p>
               <pre class="userinput"><kbd class="command">sed -i s/mawk// configure</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: в скрипте идет поиск awk реализации и первой стоит mawk. Что в этом плохого не понятно. Если mawk в хост-системе отсутствует, то вторым как раз возьмется gawk, если присутствует, то что в этом плохого? Зачем принудительно использовать gawk? Скорее всего, ничего плохого не будет, но автор LFS решил себя обезопасить от сложных разборов проблемных кейсов связаннных с тем, что сборка ncurces пошла при помощи другой awk-реализации.]</b>
+			  </p>
               <p>
                 Then, run the following commands to build the <span class="quote">“<span class="quote">tic</span>”</span>
                 program on the build host:
               </p>
               <pre class="userinput"><kbd class="command">mkdir build
 pushd build
-  ../configure
-  make -C include
-  make -C progs tic
+../configure
+make -C include
+make -C progs tic
 popd</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: tic понадобится ниже, когда будет вызываться make install.]</b>
+			  </p>
               <p>
                 Prepare Ncurses for compilation:
               </p>
@@ -10129,6 +10138,7 @@ echo "INPUT(-lncursesw)" &gt; $LFS/usr/lib/libncurses.so</kbd></pre>
             </div>
             <div class="package" lang="en">
               <p>
+			    <b>[PROF.FORTRAN: почему-то не используется патч coreutils-9.1-i18n-1.patch, хотя он был скачен]</b><br>
                 The Coreutils package contains the basic utility programs
                 needed by every operating system.
               </p>
@@ -10157,6 +10167,9 @@ echo "INPUT(-lncursesw)" &gt; $LFS/usr/lib/libncurses.so</kbd></pre>
             --build=$(build-aux/config.guess) \
             --enable-install-program=hostname \
             --enable-no-install-program=kill,uptime</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: если я правильно понял, то программы вроде hostname, kill и uptime - это все части coreutils, но hostname по умолчанию не собирается, а мы хотим, а kill и uptime, наоборот, по умолчанию собираются, но мы не хотим их видеть в целевой системе (ПОЧЕМУ?)]</b>
+			  </p>
               <div class="variablelist">
                 <p class="title">
                   <strong>The meaning of the configure options:</strong>
@@ -10868,6 +10881,9 @@ popd</kbd></pre>
                 cross compilation:
               </p>
               <pre class="userinput"><kbd class="command">rm -v $LFS/usr/lib/liblzma.la</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: хорошо бы разобраться в том, что такое <a href="https://www.linuxfromscratch.org/blfs/view/svn/introduction/la-files.html">libtool archive file</a>, а то в LFS их регуляно удаляют, а я не понимаю, чем они мешают кросс-компиляции]</b>
+			  </p>
             </div>
             <div class="content" lang="en">
               <p>
@@ -11176,6 +11192,9 @@ cd       build</kbd></pre>
               isolated from the host operating system (except for the running
               kernel), can be used for the build.
             </p>
+			<p>
+			  <b>[PROF.FORTRAN: проблема с LFS та же, что и с reoser. Chroot-у требуется поддержка текущего ядра линукс, а это значит, что в таком виде LFS не будет работать ни в Windows, ни даже в BSD]</b>
+			</p>
             <p>
               For proper operation of the isolated environment, some
               communication with the running kernel must be established. This
@@ -11184,6 +11203,9 @@ cd       build</kbd></pre>
               entering the chroot environment. You may want to verify that
               they are mounted by issuing the <span class="command"><strong>findmnt</strong></span> command.
             </p>
+			<p>
+			  <b>[PROF.FORTRAN: findmnt - это часть util-linux]</b>
+			</p>
             <p>
               Until <a class="xref" href="https://www.linuxfromscratch.org/lfs/downloads/stable/LFS-BOOK-11.3-NOCHUNKS.html#ch-tools-chroot" title="7.4. Entering the Chroot Environment">Section&nbsp;7.4,
               “Entering the Chroot Environment”</a>, the commands
@@ -11285,6 +11307,9 @@ esac</kbd></pre>
                 do this.
               </p>
               <pre class="userinput"><kbd class="command">mount -v --bind /dev $LFS/dev</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: помню, что в reoser у меня были какие-то затыки с некоторыми хост-системами из-за отсутствия поддержки devtmpfs или монтирования через --bind. Как я понял, сервис udev - это сервис отслеживания появления подключенных устройств]</b>
+			  </p>
             </div>
             <div class="sect2" lang="en">
               <h3 class="sect2">
@@ -11298,6 +11323,11 @@ esac</kbd></pre>
 mount -vt proc proc $LFS/proc
 mount -vt sysfs sysfs $LFS/sys
 mount -vt tmpfs tmpfs $LFS/run</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: /dev/pts с его файловой системой devpts - это еще одна проблемная для reoser-а точка]</b>
+				<br>
+				<b>[PROF.FORTRAN: proc, sysfs, tmpfs - тоже могли быть проблемными в reoser-е, но я уже не помню]</b>
+			  </p>
               <p>
                 In some host systems, <code class="filename">/dev/shm</code>
                 is a symbolic link to <code class="filename">/run/shm</code>.
