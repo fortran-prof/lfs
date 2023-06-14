@@ -11374,6 +11374,11 @@ fi</kbd></pre>
     PS1='(lfs chroot) \u:\w\$ ' \
     PATH=/usr/bin:/usr/sbin     \
     /bin/bash --login</kbd></pre>
+			<p>
+			  <b>[PROF.FORTRAN: PS1 - это шаблон строки приглашения bash. \u - это имя пользователя. Мы пользователь с полными правами и UID = 0, но пока в chroot-е не появится файл /etc/passwd, у нашего пользователя не появится имя "root". Это приведет к тому по началу \u будет выводиться как "I have no name!", а у всех файлов в chroot-е в качестве владельца будет написан не "root", а "0"]</b>
+			  <br>
+			  <b>[PROF.FORTRAN: надо бы еще добавить MAKEFLAGS='-j4' под имеющееся число ядер]</b>
+			</p>
             <p>
               The <em class="parameter"><code>-i</code></em> option given to
               the <span class="command"><strong>env</strong></span> command
@@ -11399,6 +11404,9 @@ fi</kbd></pre>
               the <code class="envar">PATH</code>. This means that the cross
               toolchain will no longer be used.
             </p>
+			<p>
+			  <b>[PROF.FORTRAN: вроде как к папке /tools относятся только binutils pass 1 и gcc pass 1.]</b>
+		    </p>
             <p>
               Note that the <span class="command"><strong>bash</strong></span> prompt will say
               <code class="computeroutput">I have no name!</code> This is
@@ -11492,6 +11500,9 @@ install -dv -m 1777 /tmp /var/tmp</kbd></pre>
               bit,</span>”</span> the highest bit (1) in the 1777 bit
               mask.
             </p>
+			<p>
+			  <b>[PROF.FORTRAN: команда install - это часть coreutils и умеет создавать директории с заданными правами доступа. mkdir - тоже часть coreutils и тоже умеет создавать директории с заданными правами доступа. Поэтому я хз, почему авторы LFS решили часть папок создать через install]</b>
+		    </p>
             <div class="sect2" lang="en">
               <h3 class="sect2">
                 7.5.1. FHS Compliance Note
@@ -11517,6 +11528,9 @@ install -dv -m 1777 /tmp /var/tmp</kbd></pre>
                   verify that it does not exist, because it is easy to create
                   it inadvertently, and this will probably break your system.
                 </p>
+				<p>
+			      <b>[PROF.FORTRAN: не понимаю, что в LFS за проблема с папкой /usr/lib64]</b>
+		        </p>
               </div>
             </div>
           </div>
@@ -11643,6 +11657,9 @@ install -o tester -d /home/tester</kbd></pre>
               created, user name and group name resolution will now work:
             </p>
             <pre class="userinput"><kbd class="command">exec /usr/bin/bash --login</kbd></pre>
+			<p>
+			  <b>[PROF.FORTRAN: почему нельзя просто запустить bash? Хоть визуально результат и тот же, но я все же сделал так, как написано выше, чтобы случайно не нарваться на магию]</b>
+			</p>
             <p>
               The <span class="command"><strong>login</strong></span>,
               <span class="command"><strong>agetty</strong></span>, and
@@ -12211,12 +12228,18 @@ chmod -v 600  /var/log/btmp</kbd></pre>
                 package failures. Remove those files now:
               </p>
               <pre class="userinput"><kbd class="command">find /usr/{lib,libexec} -name \*.la -delete</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: опять какая-то проблема с <a href="https://www.linuxfromscratch.org/blfs/view/svn/introduction/la-files.html" target="blank">libtool (.la) файлами</a>. Кроме того, оставлена еще одна зацепка для того, чтобы в этом разобраться, а именно, libltdl]</b>
+			  </p>
               <p>
                 The current system size is now about 3 GB, however the /tools
                 directory is no longer needed. It uses about 1 GB of disk
                 space. Delete it now:
               </p>
               <pre class="userinput"><kbd class="command">rm -rf /tools</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: почему мы удаляем ее только сейчас? Как минимум все нахождение в chroot-е мы tools не использовали. А может даже еще раньше. Надо разобраться когда она становится не нужна и удалить ее сразу же]</b>
+			  </p>
             </div>
             <div class="sect2" lang="en">
               <h3 class="sect2">
@@ -12286,6 +12309,9 @@ chmod -v 600  /var/log/btmp</kbd></pre>
               <pre class="userinput"><kbd class="command">mountpoint -q $LFS/dev/shm &amp;&amp; umount $LFS/dev/shm
 umount $LFS/dev/pts
 umount $LFS/{sys,proc,run,dev}</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: mountpoint/umount/mount - все это util-linux]</b>
+			  </p>
               <p>
                 Make sure you have at least 1 GB free disk space (the source
                 tarballs will be included in the backup archive) on the file
@@ -12578,6 +12604,9 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
                       with the kernel. You will merely need to reboot your
                       system to use the upgraded kernel.
                     </p>
+				    <p>
+			          <b>[PROF.FORTRAN: Если api не менялся, то все просто. Но это только для патчевых и минорных версий ядра. Если изменилась мажорная версия, то, скорее всего, api изменилось и все на так просто]</b>
+			        </p>
                   </li>
                   <li class="listitem">
                     <p>
@@ -12588,6 +12617,9 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
                       rebuild all the packages in their dependency order, we
                       do not recommend it.
                     </p>
+                    <p>
+			          <b>[PROF.FORTRAN: Тут как раз разобран случай, когда api поменялось. Странно, конечно, что это произошло в минорной версии glibc]</b>
+			        </p>
                   </li>
                   <li class="listitem">
                     <p>
@@ -12650,6 +12682,9 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
                       to confirm that nothing is still using the deleted
                       libraries.
                     </p>
+					<p>
+			          <b>[PROF.FORTRAN: Три пункта выше - все о динамической линковке. Если я правильно понял, то линковка происходит по мажорной версии бибилотеки, и если у тебя в системе стоит 3 версии либы foo: libfoo.so.1.24, libfoo.so.1.25, libfoo.so.2.1, и при динамической линковке указывается имя libfoo.so.1, то прилинкована будет версия libfoo.so.1.25. Именно по этой причине в случае желания даунгрейда до версии libfoo.so.1.24, нужно удалять файл libfoo.so.1.25, а программу рестартовывать. А при желании апгрейднуться до libfoo.so.2.1, нужно делать пересборку, т.к. нужно в коде прописать имя библиотеки с учетом смены мажорной версии libfoo.so.2]</b>
+			        </p>
                   </li>
                   <li class="listitem">
                     <p>
@@ -12669,6 +12704,9 @@ tar -xpf $HOME/lfs-temp-tools-11.3.tar.xz</code></pre>
                       safer to save your work and close unneeded running
                       processes before updating a package.
                     </p>
+					<p>
+			          <b>[PROF.FORTRAN: все любопытней, что же это за недопакетный менеджер install, который умеет удалять программу перед установкой новой версии]</b>
+			        </p>
                   </li>
                 </ul>
               </div>
@@ -12786,6 +12824,9 @@ make DESTDIR=/usr/pkg/libfoo/1.1 install</kbd></pre>
                   find that it is easier to install some problematic packages
                   into <code class="filename">/opt</code>.
                 </p>
+				<p>
+			      <b>[PROF.FORTRAN: если я правильно понял, то согласно некоторой конвенции --prefix в конфигурационных скриптах используется как префикс для поиска динамических библиотек и как путь для установки. При этом путь для установки может быть переопределен через DESTDIR во время make install. И вроде как есть пакетные менеджеры Stow, Epkg, Graft и Depot, которые этим активно пользуются, что позволяет ставить в систему сразу несколько версий одной и той же программы.]</b>
+			    </p>
               </div>
               <div class="sect3">
                 <div class="titlepage">
@@ -13296,10 +13337,18 @@ cd       build</kbd></pre>
                   </li>
                   <li class="listitem">
                     <p>
+                      <b>[PROF.FORTRAN: еще упал nptl/tst-mutex10]</b>
+                    </p>
+                  </li>
+                  <li class="listitem">
+                    <p>
                       The <span class="emphasis"><em>stdlib/tst-arc4random-thread</em></span>
                       test is known to fail if the host kernel is relatively
                       old.
                     </p>
+				    <p>
+				      <b>[PROF.FORTRAN: вместо stdlib/tst-arc4random-thread упали stdlib/test-cxa_atexit-race2 и stdlib/tst-arc4random-fork]</b>
+				    </p>
                   </li>
                   <li class="listitem">
                     <p>
@@ -13307,6 +13356,9 @@ cd       build</kbd></pre>
                       are known to fail on relatively slow systems due to an
                       internal timeout.
                     </p>
+					<p>
+				      <b>[PROF.FORTRAN: у меня ресурсов достаточно, поэтому этот тест был пройден]</b>
+				    </p>
                   </li>
                 </ul>
               </div>
@@ -13324,6 +13376,9 @@ cd       build</kbd></pre>
                 Install the package:
               </p>
               <pre class="userinput"><kbd class="command">make install</kbd></pre>
+			  <p>
+		        <b>[PROF.FORTRAN: я не поманию, почему находясь в папке build мы правим ../Makefile, а make install запускается, очевидно, на ./Makefile]</b>
+			  </p>
               <p>
                 Fix a hardcoded path to the executable loader in the
                 <span class="command"><strong>ldd</strong></span> script:
@@ -13341,6 +13396,9 @@ mkdir -pv /var/cache/nscd</kbd></pre>
                 if some of them are missing, the test suites of some packages
                 will skip important test cases.
               </p>
+			  <p>
+		        <b>[PROF.FORTRAN: о каких тестах идет речь? мы же уже запустили make check]</b>
+			  </p>
               <p>
                 Individual locales can be installed using the <span class="command"><strong>localedef</strong></span> program. E.g.,
                 the second <span class="command"><strong>localedef</strong></span> command below
@@ -13390,6 +13448,9 @@ localedef -i zh_TW -f UTF-8 zh_TW.UTF-8</kbd></pre>
                 In addition, install the locale for your own country,
                 language and character set.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: для русской локали нужно запустить localedef -i ru_RU -f UTF-8 ru_RU.UTF-8, но я пока не делал этого]</b>
+			  </p>
               <p>
                 Alternatively, install all the locales listed in the
                 <code class="filename">glibc-2.37/localedata/SUPPORTED</code>
@@ -13397,6 +13458,9 @@ localedef -i zh_TW -f UTF-8 zh_TW.UTF-8</kbd></pre>
                 once with the following time-consuming command:
               </p>
               <pre class="userinput"><kbd class="command">make localedata/install-locales</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: файла или папки localedata/install-locales нет, строчки install-locales в Makefile тоже нет]</b>
+			  </p>
               <p>
                 Then use the <span class="command"><strong>localedef</strong></span> command to create
                 and install locales not listed in the <code class="filename">glibc-2.37/localedata/SUPPORTED</code> file when
@@ -13405,6 +13469,9 @@ localedef -i zh_TW -f UTF-8 zh_TW.UTF-8</kbd></pre>
               </p>
               <pre class="userinput"><kbd class="command">localedef -i POSIX -f UTF-8 C.UTF-8 2&gt; /dev/null || true
 localedef -i ja_JP -f SHIFT_JIS ja_JP.SJIS 2&gt; /dev/null || true</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: выше я это уже сделал]</b>
+			  </p>
               <div class="admon note">
                 <h3>
                   Note
@@ -13490,6 +13557,9 @@ done
 cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
 zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO</kbd></pre>
+			    <p>
+			      <b>[PROF.FORTRAN: я так и не понял, что такое etcetera и backward]</b>
+			    </p>
                 <div class="variablelist">
                   <p class="title">
                     <strong>The meaning of the zic commands:</strong>
@@ -13564,6 +13634,9 @@ unset ZONEINFO</kbd></pre>
                   Replace <em class="replaceable"><code>&lt;xxx&gt;</code></em> with the name
                   of the time zone selected (e.g., Canada/Eastern).
                 </p>
+				<p>
+			      <b>[PROF.FORTRAN: если я правильно понял, то tzselect лишь позволяет узнать правильное имя таймзоны (и то не для всех тайизон), но ничего в систему не прописывает. Прописывать нужно самостоятельно созданием символьной ссылки выше и созданием переменной окружения TZ, о чем выше почему то не сказано (видимо, потому что к glibc это не имееет никакого отношения)]</b>
+			    </p>
               </div>
               <div class="sect3">
                 <div class="titlepage">
@@ -14263,6 +14336,9 @@ mkdir -pv /etc/ld.so.conf.d</kbd></pre>
                 Remove a useless static library:
               </p>
               <pre class="userinput"><kbd class="command">rm -fv /usr/lib/libz.a</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: если я правильно понимаю, то в LFS все статические (*.a) либы удаляются, а оставляются только их динамические (*.so) вариации]</b>
+			  </p>
             </div>
             <div class="content" lang="en">
               <h3 class="sect2">
@@ -14390,6 +14466,9 @@ make clean</kbd></pre>
               </p>
               <pre class="userinput"><kbd class="command">cp -av libbz2.so.* /usr/lib
 ln -sv libbz2.so.1.0.8 /usr/lib/libbz2.so</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: тут, очевидно, идет 2 сборки: одна bzip-а, а другая динамической либы. Не понятно только почему нельзя было написать эти две сборки не вперемешку, а сначала сделать сборку динамической либы через make -f Makefile-libbz2_so && make clean и поставить ее в систему через эти команды копирования, и только потом патчить Makefile и приступать к сборке и установке самого bzip-а]</b>
+			  </p>
               <p>
                 Install the shared <span class="command"><strong>bzip2</strong></span> binary into the
                 <code class="filename">/usr/bin</code> directory, and replace
@@ -14599,6 +14678,9 @@ done</kbd></pre>
                     </tr>
                   </tbody>
                 </table>
+				<p>
+			      <b>[PROF.FORTRAN: такое чувство, что bzip позволяет искать по сжатым файлам (как в пегом дудочнике :) )]</b>
+			    </p>
               </div>
             </div>
           </div>
@@ -14622,6 +14704,9 @@ done</kbd></pre>
                 <span class="command"><strong>gzip</strong></span> or
                 <span class="command"><strong>bzip2</strong></span> commands.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: получается, что лучше всего текстовые файлы жмёт xz, потом bzip2, потом gzip]</b>
+			  </p>
               <div class="segmentedlist">
                 <div class="seglistitem">
                   <div class="seg">
@@ -15007,6 +15092,11 @@ done</kbd></pre>
                     </tr>
                   </tbody>
                 </table>
+			    <p>
+			      <b>[PROF.FORTRAN: думаю, что я ошибся, что есть поиск по сжатым файлам. Скорее всего, перед поиском файлы распаковываются в памяти.]</b>
+				  <br>
+				  <b>[PROF.FORTRAN: похоже, что для xz динамической либы нет, только для lzma]</b>
+			    </p>
               </div>
             </div>
           </div>
@@ -15812,6 +15902,11 @@ sed -i '/{OLDSUFF}/c:' support/shlib-install</kbd></pre>
                     </tr>
                   </tbody>
                 </table>
+			    <p>
+			      <b>[PROF.FORTRAN: не понимаю, о каких паттернах в тексте идёт речь]</b>
+				  <br>
+				  <b>[PROF.FORTRAN: складывается впечатление, что программа может определить по какой символьной ссылке ее запустили и в зависимости от этого по разному работать. Если так, то это любопытно, потому что напоминает виртуальные хосты придуманные в apache-сервер и которые повсеместно используются, когда на одном IP-адресе висит много сайтов, а какой именно сайт запускать определяется по хедеру Host в запросе]</b>
+			    </p>
               </div>
             </div>
           </div>
