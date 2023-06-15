@@ -16103,6 +16103,9 @@ cp -v -r  ./html/* /usr/share/doc/tcl-8.6.13</kbd></pre>
                     </tr>
                   </tbody>
                 </table>
+	            <p>
+			      <b>[PROF.FORTRAN: почему в этот раз решили не удалять статическую версию либы?]</b>
+			    </p>
               </div>
             </div>
           </div>
@@ -16302,10 +16305,16 @@ makeinfo --plaintext       -o doc/dejagnu.txt  ../doc/dejagnu.texi</kbd></pre>
               <pre class="userinput"><kbd class="command">make install
 install -v -dm755  /usr/share/doc/dejagnu-1.6.3
 install -v -m644   doc/dejagnu.{html,txt} /usr/share/doc/dejagnu-1.6.3</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: install - какая-то универсальная команда: хош папку создай, хош файлы скопируй]</b>
+			  </p>
               <p>
                 To test the results, issue:
               </p>
               <pre class="userinput"><kbd class="command">make check</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: почему нет make, а сразу идет make install?]</b>
+			  </p>
             </div>
             <div class="content" lang="en">
               <h3 class="sect2">
@@ -16510,6 +16519,9 @@ cd       build</kbd></pre>
                   </dd>
                 </dl>
               </div>
+			  <p>
+			    <b>[PROF.FORTRAN: если я правильно понял, то по умолчанию собирается именно кросс-компайл версия. И поэтому при pass 1 и pass 2 для binutils мы параметр tooldir не передавали. А тут у нас уже целевая система собирается и вся эта магия с кросс-компайлом не нужна]</b>
+			  </p>
               <div class="admon important">
                 <h3>
                   Important
@@ -16945,6 +16957,9 @@ rm -fv /usr/share/man/man1/{gprofng,gp-*}.1</kbd></pre>
                   with
                 </p>
                 <pre class="userinput"><kbd class="command"><em class="parameter"><code>ABI=32</code></em> ./configure ...</kbd></pre>
+				<p>
+			      <b>[PROF.FORTRAN: если я правильно понял, то когда мы захотим на 64-битной системе собирать бинарник под 32-битную систему, то мы должны это указать и в CFLAGS, и через ABI. Не понятно только, почему эта ремарка исключительно для GMP, а не для всего]</b>
+			    </p>
               </div>
               <div class="admon note">
                 <h3>
@@ -17589,6 +17604,8 @@ make install-html</kbd></pre>
                 <div>
                   <h2 class="title">
                     <a id="ch-system-libcap"></a>8.24.&nbsp;Libcap-2.67
+					<br>
+					<b>[PROF.FORTRAN: Libcap-2.69]</b>
                   </h2>
                 </div>
               </div>
@@ -18664,6 +18681,9 @@ cd       build</kbd></pre>
               <pre class="userinput"><kbd class="command">chown -Rv tester .
 su tester -c "PATH=$PATH make -k check"</kbd></pre>
               <p>
+			    <b>[PROF.FORTRAN: на 4-х ядрах тесты шли 1 час 40 мин]</b>
+			  </p>
+              <p>
                 To extract a summary of the test suite results, run:
               </p>
               <pre class="userinput"><kbd class="command">../contrib/test_summary</kbd></pre>
@@ -18723,6 +18743,9 @@ su tester -c "PATH=$PATH make -k check"</kbd></pre>
               <pre class="userinput"><kbd class="command">echo 'int main(){}' &gt; dummy.c
 cc dummy.c -v -Wl,--verbose &amp;&gt; dummy.log
 readelf -l a.out | grep ': /lib'</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: ранее такое мы грепали через grep interpreter]</b>
+			  </p>
               <p>
                 There should be no errors, and the output of the last command
                 will be (allowing for platform-specific differences in the
