@@ -21792,6 +21792,9 @@ EOF</kbd></pre>
                     </tr>
                   </tbody>
                 </table>
+				<p>
+			      <b>[PROF.FORTRAN: есть подозрение, что iputils - это тоже самое, но посвежее, чем inetutils. Может в этом случае не пришлось бы disable-ить половину приложений]</b>
+				</p>
               </div>
             </div>
           </div>
@@ -22826,6 +22829,9 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-0.51.0/I18N-HOWTO</kbd>
                   test time by over 60 percent.
                 </p>
               </div>
+			  <p>
+			    <b>[PROF.FORTRAN: почему-то не MAKEFLAGS, а TESTSUITEFLAGS]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
@@ -23025,6 +23031,9 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-0.51.0/I18N-HOWTO</kbd>
               <p>
                 The test t/subobj.sh is known to fail.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: у меня было 38 XFAIL-ов]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
@@ -23131,6 +23140,9 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-0.51.0/I18N-HOWTO</kbd>
               </div>
             </div>
             <div class="package" lang="en">
+			  <p>
+			    <b>[PROF.FORTRAN: openssl-3.1.1.tar.gz]</b>
+			  </p>
               <p>
                 The OpenSSL package contains management tools and libraries
                 relating to cryptography. These are useful for providing
@@ -23177,6 +23189,9 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-0.51.0/I18N-HOWTO</kbd>
                 CONFIG_CRYPTO_USER_API* settings.) If it fails, it can safely
                 be ignored.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: у меня не упало. Может потому что версия 3.1.1, а не 3.0.8, а может потому что выше написано, что он не всегда падает, и мне повезло]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
@@ -23187,10 +23202,16 @@ make MANSUFFIX=ssl install</kbd></pre>
                 consistent with other packages:
               </p>
               <pre class="userinput"><kbd class="command">mv -v /usr/share/doc/openssl /usr/share/doc/openssl-3.0.8</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: mv -v /usr/share/doc/openssl /usr/share/doc/openssl-3.1.1]</b>
+			  </p>
               <p>
                 If desired, install some additional documentation:
               </p>
               <pre class="userinput"><kbd class="command">cp -vfr doc/* /usr/share/doc/openssl-3.0.8</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: cp -vfr doc/* /usr/share/doc/openssl-3.1.1]</b>
+			  </p>
               <div class="admon note">
                 <h3>
                   Note
