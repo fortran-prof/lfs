@@ -19309,6 +19309,9 @@ mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib</kbd></pre>
                       of Glib because an external version is not available in
                       LFS.
                     </p>
+					<p>
+			          <b>[PROF.FORTRAN: тут видимо речь не про glibc, а про просто glib, т.к. glibc не только есть в LFS, а мы его уже поставили]</b>
+			        </p>
                   </dd>
                   <dt>
                     <span class="term"><em class="parameter"><code>--disable-host-tool</code></em></span>
@@ -21048,6 +21051,11 @@ EOF</kbd></pre>
                   test time by over 60 percent.
                 </p>
               </div>
+			  <p>
+			    <b>[PROF.FORTRAN: что такое -k? чтобы не останавливаться, если тесты падают?]</b>
+				<br>
+				<b>[PROF.FORTRAN: почему используется TESTSUITEFLAGS, а не стандартный MAKEFLAGS?]</b>
+			  </p>
               <p>
                 Five tests are known to fail in the LFS build environment due
                 to a circular dependency, but these tests pass if rechecked
