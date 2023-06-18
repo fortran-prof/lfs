@@ -24141,6 +24141,9 @@ tar --strip-components=1  \
                 Compile Wheel with the following command:
               </p>
               <pre class="userinput"><kbd class="command">PYTHONPATH=src pip3 wheel -w dist --no-build-isolation --no-deps $PWD</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: если я правильно понимаю, то wheel это питоновский пакет для заворачивания питоновских пакетов. А тут мы хотим завернуть исходники wheel в пакет при помощи wheel, которого еще в системе нет, и PYTHONPATH=src помогает завернуть wheel-пакет при помощи самого себя]</b>
+			  </p>
               <p>
                 Install Wheel with the following command:
               </p>
@@ -24337,6 +24340,9 @@ tar --strip-components=1  \
   if ( j &gt; 0 ) return j;\
 ' src/ninja.cc</kbd></pre>
               <p>
+			    <b>[PROF.FORTRAN: лучше поправить на поиск `int GuessParallelism()`, т.к. оно более читабельно, чем `int Guess`]</b>
+			  </p>
+              <p>
                 Build Ninja with:
               </p>
               <pre class="userinput"><kbd class="command">python3 configure.py --bootstrap</kbd></pre>
@@ -24356,11 +24362,17 @@ tar --strip-components=1  \
                   </dd>
                 </dl>
               </div>
+			  <p>
+			    <b>[PROF.FORTRAN: python-ом собирается c++-шная программа ninja, а потом она же пересобирается заново, но уже с помощью только что собранной ninja?]</b>
+			  </p>
               <p>
                 To test the results, issue:
               </p>
               <pre class="userinput"><kbd class="command">./ninja ninja_test
 ./ninja_test --gtest_filter=-SubprocessTest.SetWithLots</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: первая строка, как я понял, готовит тесты, а вторая их запускает]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
@@ -25034,6 +25046,9 @@ sed -i 's/"1"/"8"/' /usr/share/man/man8/chroot.8</kbd></pre>
                           (including all subdirectories) or by each of the
                           given files
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: я бы в --enable-no-install-program добавил и du, потому что потом все-равно лучше будет поставить ncdu]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -25046,6 +25061,9 @@ sed -i 's/"1"/"8"/' /usr/share/man/man8/chroot.8</kbd></pre>
                         <p>
                           Displays the given strings
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: вроде где-то выше я допустил ошибку в ремарках, сказав, что echo, это не часть coreutils, а часть bash]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -26328,6 +26346,9 @@ sed -i 's/"1"/"8"/' /usr/share/man/man8/chroot.8</kbd></pre>
                 First, ensure some unneeded files are not installed:
               </p>
               <pre class="userinput"><kbd class="command">sed -i 's/extras//' Makefile.in</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: extras - это, видимо, имя собственное какого-то не нужного файла]</b>
+			  </p>
               <p>
                 Prepare Gawk for compilation:
               </p>
@@ -28268,6 +28289,9 @@ cp -v COPYING README* /usr/share/doc/iproute2-6.1.0</kbd></pre>
                           continuously monitor the state of devices,
                           addresses and routes
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: ip - это, вроде как, аналог и замена ifconfig]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
