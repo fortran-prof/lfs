@@ -29123,6 +29123,9 @@ cp -R -v docs/doc/* /usr/share/doc/kbd-2.5.1</kbd></pre>
                 To test the results, issue:
               </p>
               <pre class="userinput"><kbd class="command">make check</kbd></pre>
+			  <p>
+			    <b>[PROF.FORTRAN: у меня вышло `XFAIL: 2`]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
@@ -29610,6 +29613,9 @@ popd</kbd></pre>
                 output to a log file as shown above. A successful test will
                 result in the words "ALL DONE" in the log file at completion.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: cat vim-test.log | grep "ALL DONE"]</b>
+			  </p>			  
               <p>
                 Install the package:
               </p>
@@ -29862,6 +29868,9 @@ set spell</code></pre>
                           perform the inverse operation, so it can be used
                           for binary patching
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: xxd - это оказывается часть vim-а]</b>
+			            </p>
                       </td>
                     </tr>
                   </tbody>
@@ -30509,6 +30518,9 @@ make -f udev-lfs-20171102/Makefile.lfs install</kbd></pre>
                   Manual pages in languages not in the list are not
                   supported.
                 </p>
+				<p>
+			      <b>[PROF.FORTRAN: странно, но русского нет. Может это паранойя, но как будто причина в 24 февраля. Правда тогда странно, что в vim для примера использован именно ru. Может забыли поправить...]</b>
+			    </p>
               </div>
             </div>
             <div class="content" lang="en">
@@ -30745,6 +30757,9 @@ make -f udev-lfs-20171102/Makefile.lfs install</kbd></pre>
                       This switch disables building the <span class="command"><strong>kill</strong></span> command; it will
                       be installed from the Util-linux package.
                     </p>
+					<p>
+			          <b>[PROF.FORTRAN: этот несчастный kill то из coreutils не стали ставить, теперь отсюда]</b>
+			        </p>
                   </dd>
                 </dl>
               </div>
@@ -30937,6 +30952,9 @@ make -f udev-lfs-20171102/Makefile.lfs install</kbd></pre>
                           processes; it provides an ongoing look at processor
                           activity in real time
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: можно попробовать не ставить через --disable-top, а позже просто поставить htop]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -31101,6 +31119,9 @@ su tester -c "make -k check"</kbd></pre>
                 from misc: mbsencode and one sub-test from script: replay are
                 known to fail.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: у меня все тесты были пройдены]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
@@ -32009,6 +32030,9 @@ su tester -c "make -k check"</kbd></pre>
                           A filter for paging through text one screen at a
                           time
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: мы Less отдельно ставили, может стоит попробовать отключить more через --disable-more?]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -32194,6 +32218,9 @@ su tester -c "make -k check"</kbd></pre>
                         <p>
                           Makes a typescript of a terminal session
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: это какой-то другой typescript? не тот, что замена javascript?]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -32702,6 +32729,9 @@ cd       build</kbd></pre>
               <p>
                 One test, u_direct_io, is known to fail on some systems.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: у меня тоже был один fail, но другой `m_assume_storage_prezeroed: test prezeroed storage metadata allocation: failed`]</b>
+			  </p>
               <p>
                 Install the package:
               </p>
