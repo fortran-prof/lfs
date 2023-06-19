@@ -33840,6 +33840,9 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
               the beginning of the previous chapter.
             </p>
             <pre class="userinput"><kbd class="command">userdel -r tester</kbd></pre>
+			<p>
+			  <b>[PROF.FORTRAN: после этого tester пропадет как в /etc/group, /etc/shadow, /etc/passwd]</b>
+			</p>
           </div>
         </div>
         <div class="chapter" lang="en">
@@ -34098,6 +34101,9 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                         <p>
                           Halts the system
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: перезатирает ли тот halt, что был установлен, когда ставили Sysvinit? Чем они отличаются?]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -34215,6 +34221,9 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                         <p>
                           Reboots the system
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: перезатирает ли тот reboot, что был установлен, когда ставили Sysvinit? Чем они отличаются?]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -34292,6 +34301,9 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                         <p>
                           Starts and stops the system and kernel log daemons
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: мы отдельно ставили sysklogd, но там не было бинаря sysklogd, зато были klogd и syslogd. Чем они отличаются от этого sysklogd схожего назначения?]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
@@ -34318,6 +34330,9 @@ unset BIN LIB save_usrlib online_usrbin online_usrlib
                           Prepares the <code class="filename">/dev</code>
                           directory and starts the udev daemon
                         </p>
+						<p>
+			              <b>[PROF.FORTRAN: мы ставили eudev, там был udevd. Почему udev ставится тут отдельно?]</b>
+			            </p>
                       </td>
                     </tr>
                     <tr>
