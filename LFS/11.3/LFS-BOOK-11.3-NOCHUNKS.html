@@ -35119,6 +35119,9 @@ EOF</kbd></pre>
                 <code class="filename">/dev/tvtuner</code> and <code class="filename">/dev/webcam</code> that always point to the
                 correct device.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: не понимаю при чем здесь дубликаты: речь же не о дублях, а о случайном назначении имен]</b>
+			  </p>
             </div>
           </div>
           <div class="sect1" lang="en">
@@ -35160,6 +35163,9 @@ EOF</kbd></pre>
                   /sys/class/net</strong></span> after you have booted your
                   system.
                 </p>
+				<p>
+				  <b>[PROF.FORTRAN: имеется в виду команда "bash /usr/lib/udev/init-net-rules.sh"]</b>
+				</p>
                 <p>
                   The interface names depend on the implementation and
                   configuration of the udev daemon running on the system. The
@@ -35170,6 +35176,9 @@ EOF</kbd></pre>
                   the host distro, <span class="emphasis"><em>even in the
                   chroot environment</em></span>.
                 </p>
+				<p>
+				  <b>[PROF.FORTRAN: по сути тут намекается, что идите и запустите "bash /usr/lib/udev/init-net-rules.sh", т.к. только после этого вы сможете зафиксировать имя вашего сетевого устройства за eth0 и выполнять команды ниже]</b>
+				</p>
               </div>
               <p>
                 The following command creates a sample file for the
@@ -35186,6 +35195,18 @@ GATEWAY=<em class="replaceable"><code>192.168.1.1</code></em>
 PREFIX=<em class="replaceable"><code>24</code></em>
 BROADCAST=<em class="replaceable"><code>192.168.1.255</code></em></code>
 EOF</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: 
+			    <pre class="userinput"><kbd class="command">cat > ifconfig.eth0 << "EOF"
+ONBOOT=yes
+IFACE=eth0
+SERVICE=ipv4-static
+IP=10.0.2.15
+GATEWAY=10.0.2.1
+PREFIX=24
+BROADCAST=10.0.2.255
+EOF</kbd></pre>]</b>
+			  </p>
               <p>
                 The values in italics must be changed in each file, to set
                 the interfaces up correctly.
@@ -35214,6 +35235,9 @@ EOF</kbd></pre>
                 Configuration Protocol (DHCP), which is addressed in the BLFS
                 book.
               </p>
+			  <p>
+			    <b>[PROF.FORTRAN: в BLFS в папке /lib/services/ мы создадим не только ipv4-static, но и dhcp-шный вариант]</b>
+			  </p>
               <p>
                 The <code class="envar">GATEWAY</code> variable should
                 contain the default gateway IP address, if one is present. If
@@ -35258,6 +35282,17 @@ nameserver <em class="replaceable"><code>&lt;IP address of your secondary namese
 
 # End /etc/resolv.conf</code>
 EOF</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: 
+			    <pre class="userinput"><kbd class="command">cat > /etc/resolv.conf << "EOF"
+# Begin /etc/resolv.conf
+
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+# End /etc/resolv.conf
+EOF</kbd></pre>]</b>
+			  </p>
               <p>
                 The <code class="varname">domain</code> statement can be
                 omitted or replaced with a <code class="varname">search</code> statement. See the man page for
@@ -35354,6 +35389,20 @@ ff02::2   ip6-allrouters
 
 # End /etc/hosts</code>
 EOF</kbd></pre>
+              <p>
+			    <b>[PROF.FORTRAN: 
+			    <pre class="userinput"><kbd class="command">cat > /etc/hosts << "EOF"
+# Begin /etc/hosts
+
+127.0.0.1 localhost.localdomain localhost
+
+::1       localhost ip6-localhost ip6-loopback
+ff02::1   ip6-allnodes
+ff02::2   ip6-allrouters
+
+# End /etc/hosts
+EOF</kbd></pre>]</b>
+			  </p>
               <p>
                 The <em class="replaceable"><code>&lt;192.168.1.1&gt;</code></em>,
                 <em class="replaceable"><code>&lt;FQDN&gt;</code></em>, and
